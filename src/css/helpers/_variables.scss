@@ -1,0 +1,113 @@
+// ========================= //
+//        Base URL's         //
+// ========================= //
+// FrontEnd
+$imgPath: "/dist/img";
+$baseUrl: "/dist";
+
+// ========================= //
+//           FONTS           //
+// ========================= //
+// Used for calculating REM units from Pixels
+$fontBase: 16px;
+
+// Font Family
+$font-family-Jubilat: "jubilat", serif;
+$font-family-ProximaNova: "proxima-nova", sans-serif;
+
+// This will attach in memory all the font variables,
+// in this way we can have better performance on loading times.
+:root {
+    --font-family-Jubilat: #{inspect($font-family-Jubilat)};
+    --font-family-ProximaNova: #{inspect($font-family-ProximaNova)};
+}
+
+// ========================= //
+//          COLORS           //
+// ========================= //
+$black: #000000;
+$dark-gray: #d8d7d7;
+$dark-grey-blue: #30556b;
+$darken-grey-blue: #1f3a4b;
+$darker-gray: #d8d8d8;
+$denim-two: #3a6c8a;
+$faded-red: #c73442;
+$gray-two: #DCDCDC;
+$gray: #ECEBEB;
+$greyish-brown: #50504f;
+$greyish: #b8b8b8;
+$gross-green2: #aeb618;
+$gross-green: #727616;
+$light-gray2: #ececec;
+$light-gray3: #d0d0d0;
+$light-gray: #d5d5d5;
+$lighten-gray: #575757;
+$lighter-gray: #757575;
+$pinkish-grey: #c1c1c1;
+$pipeline-blue :#55a2a8;
+$pipeline-dark-green: #396c70;
+$pipeline-green :#a7c978;
+$pipeline-light-green :#d5e36a;
+$pipeline-yellow :#ffd966;
+$search-red: #d0021b;
+$white-five: #fafafa;
+$white-four: #dbdada;
+$white-three: #e9e7e7;
+$white-two: #fbfbfb;
+
+// This will attach in memory all the color variables,
+// in this way we can have better performance on loading times.
+$colors: () !default;
+$colors: map-merge( 
+    ( 
+        "black": $black,
+        "dark-gray": $dark-gray,
+        "dark-grey-blue": $dark-grey-blue,
+        "darken-grey-blue": $darken-grey-blue,
+        "darker-gray": $darker-gray,
+        "denim-two": $denim-two,
+        "faded-red": $faded-red,
+        "gray": $gray,
+        "gray-two": $gray-two,
+        "greyish": $greyish,
+        "greyish-brown": $greyish-brown,
+        "gross-green": $gross-green,
+        "gross-green2": $gross-green2,
+        "light-gray": $light-gray,
+        "light-gray2": $light-gray2,
+        "light-gray3": $light-gray3,
+        "lighten-gray": $lighten-gray,
+        "lighter-gray": $lighter-gray,
+        "pinkish-grey": $pinkish-grey,
+        "pipeline-blue":$pipeline-blue,
+        "pipeline-dark-green":$pipeline-dark-green,
+        "pipeline-green":$pipeline-green,
+        "pipeline-light-green":$pipeline-light-green,
+        "pipeline-yellow":$pipeline-yellow,
+        "search-red": $search-red,
+        "white-five": $white-five,
+        "white-four": $white-four,
+        "white-three": $white-three,
+        "white-two": $white-two
+    ), 
+$colors);
+
+// ========================= //
+//     COMMOM COMPONENTS     //
+// ========================= //
+// Global Menu
+$navSecondLevelTransition: all 0.5s;
+$navToggleDropdownCircle: 15px;
+$navTogglerSize: 63px;
+$navTogglerTransition: all 0.25s;
+
+// Headline Paragraph
+$pMarginMD: 20px;
+$pMarginXS: 10px;
+
+// Radio Button size:
+$rbSize: 33px;
+$chkbSize: 30px;
+
+// Forms
+$frmTransition: $navTogglerTransition;

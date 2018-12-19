@@ -1,0 +1,98 @@
+﻿// Font Weight Descriptions
+// Proxima Nova font
+// -----------------
+// light: 300
+// normal: 400
+// medium: 500
+// semibold: 600
+// bold: 700
+// extra bold: 800
+// Jubilat
+// -----------------
+// normal 400
+
+body {
+    font-family: $font-family-ProximaNova;
+    font-family: var(--font-family-ProximaNova);
+}
+
+// ========================= //
+//         HEADINGS          //
+// ========================= //
+h1 {
+    @include fontSize(40px);
+    font-family: $font-family-ProximaNova;
+    font-family: var(--font-family-ProximaNova);
+    font-weight: 800;
+    line-height: 42px;
+    margin-bottom: 10px;
+    &.small-h1 {
+        @include fontSize(32px);
+    }
+}
+
+h2 {
+    @include fontSize(24px);
+    font-family: $font-family-ProximaNova;
+    font-family: var(--font-family-ProximaNova);
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+
+h3 {
+    @include fontSize(22px);
+    font-family: $font-family-ProximaNova;
+    font-family: var(--font-family-ProximaNova);
+    font-weight: 800;
+    line-height: 26px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    @include fontSize(20px);
+    font-family: $font-family-ProximaNova;
+    font-family: var(--font-family-ProximaNova);
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 2px;
+}
+
+h5,
+h6 {
+    @include fontSize(18px);
+    font-family: $font-family-ProximaNova;
+    font-family: var(--font-family-ProximaNova);
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 2px;
+
+    a {
+        color: $dark-grey-blue;
+        color: var(--dark-grey-blue);
+
+        &:hover {
+            color: $faded-red;
+            color: var(--faded-red);
+        }
+    }
+}
+
+// ========================= //
+//        Paragraphs         //
+// ========================= //
+p {
+    @include fontSize(18px);
+    font-family: $font-family-ProximaNova;
+    font-family: var(--font-family-ProximaNova);
+    font-weight: 300;
+    line-height: 26px;
+}
+
+// ========================= //
+//       Global Links        //
+// ========================= //
+a {
+    $anchorLinkColor: $dark-grey-blue !default;
+    color: $anchorLinkColor;
+}

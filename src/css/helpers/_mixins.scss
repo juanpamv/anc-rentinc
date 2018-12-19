@@ -1,0 +1,137 @@
+// Font Size helper mixin
+/// @param {Size} $size - font size in pixels
+@mixin fontSize($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+// Handles all the component margins
+@mixin componentMargin {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+}
+
+// Triangle(chevron) helper mixin
+/// @param {Triangle Direction} $triangleDir - Triangle direction, either `up`, `right`, `down` or `left`
+/// @param {Color} $triangleColor - Triangle color
+/// @param {Length Vertical} $triangleSizeV - Triangle vertical size
+/// @param {Length Horizontal} $triangleSizeH - Triangle horizontal size
+@mixin triangle($triangleDir, $triangleSizeH, $triangleSizeV, $triangleColor) {
+	border-style: solid;
+	content: "";
+	display: inline-block;
+	float: right;
+	height: 0;
+	transform: scale(0.9999);
+	width: 0;
+	@if $triangleDir==up {
+		border-color: transparent transparent $triangleColor transparent;
+		border-width: 0 $triangleSizeV $triangleSizeH $triangleSizeV;
+	}
+	@if $triangleDir==down {
+		border-color: $triangleColor transparent transparent transparent;
+		border-width: $triangleSizeV $triangleSizeH 0 $triangleSizeV;
+	}
+	@if $triangleDir==left {
+		border-color: transparent $triangleColor transparent transparent;
+		border-width: $triangleSizeV $triangleSizeH $triangleSizeV 0;
+	}
+	@if $triangleDir==right {
+		border-color: transparent transparent transparent $triangleColor;
+		border-width: $triangleSizeV 0 $triangleSizeV $triangleSizeH;
+	}
+	@if $triangleDir==topright {
+		border-color: transparent $triangleColor transparent transparent;
+		border-width: 0 $triangleSizeH $triangleSizeV 0;
+	}
+	@if $triangleDir==bottomright {
+		border-color: transparent transparent $triangleColor transparent;
+		border-width: 0 0 $triangleSizeH $triangleSizeV;
+	}
+	@if $triangleDir==bottomleft {
+		border-color: transparent transparent transparent $triangleColor;
+		border-width: $triangleSizeH 0 0 $triangleSizeV;
+	}
+	@if $triangleDir==topleft {
+		border-color: $triangleColor transparent transparent transparent;
+		border-width: $triangleSizeH $triangleSizeV 0 0;
+	}
+}
+
+// Handle open / close icon
+/// @param {open background color} $openBG - Circle background color
+/// @param {open icon color} $openIcon - Internal icon color
+/// @param {close background color} $closeBG - Circle background color
+/// @param {close icon color} $closeIcon - Internal icon color
+/// @param {scale size} $circleSize - circle scale size number relative to circle percentage size
+@mixin openIcon($openBG, $openIcon, $closeBG, $closeIcon, $scale) {
+	.toggle-dropdown-circle {
+		background-color: $openBG;
+		bottom: 0;
+		display: block;
+		height: $navToggleDropdownCircle;
+		position: absolute;
+		right: 15px;
+		top: 0;
+		transform: scale($scale);
+		transition: all 1s;
+		width: $navToggleDropdownCircle;
+
+		// cross + icon
+		&::before,
+		&::after {
+			background-color: $openIcon;
+			content: "";
+			display: block;
+			height: 3px;
+			transition: all 1s;
+			width: 9px;
+		}
+
+		// horizontal line
+		&::before {
+			transform: translate(3px, 6px);
+		}
+
+		// vertical line
+		&::after {
+			transform: rotate(90deg) translate(3px, -3px);
+		}
+	}
+	
+	&[aria-expanded="true"] {
+		.toggle-dropdown-circle {
+			background-color: $closeBG;
+
+			// horizontal line
+			&::before {
+				background-color: $closeIcon;
+			}
+
+			// vertical line
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&.active {
+		.toggle-dropdown-circle {
+			background-color: $closeBG;
+
+			// horizontal line
+			&::before {
+				background-color: $closeIcon;
+			}
+			
+			// vertical line
+			&::after {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+// Naming Convention: [BEM] Blocks, Elements and Modifiers
+// Reference: http://getbem.com/introduction/
+
+// TEMPLATE
+// Parent Class or HTML Element
+.class1 {
+    // Direct styles of the class or <html element> using alphabetic order
+    height: 10px;
+    width: 10px;
+    // Media queries of the class or <html element>
+    // Remember to use @mixings for media-queries
+    @media query {
+        height: 20px;
+        width: 20px;
+    }
+
+    // Pseudo Classes: ":firts-of-type, :nth-of-type(), etc...",
+    // Pseudo Classes uses single quote ":"
+    &:pseudo-classes {
+        // Direct styles of the pseudo-class using alphabetic order
+        background-color: red;
+        // Media queries of the class or <html element>
+        // Remember to use @mixings for media-queries
+        @media query {
+            background-color: blue;
+        }
+    }
+    // Pseudo Elements: "::after, ::before"
+    // Pseudo Elements uses double quote "::"
+    &::pseudo-ements {
+        // Direct styles of the pseudo-element using alphabetic order
+        background-color: green;
+        // Media queries of the pseudo-element
+        // Remember to use @mixings for media-queries
+        @media query {
+            background-color: yellow;
+        }
+    }
+
+    // Element child of the class or <html element>
+    htmlTag {
+        // Direct styles of the <html element> using alphabetic order
+        padding: 10px;
+        // Media queries of the <html element>
+        // Remember to use @mixings for media-queries
+        @media query {
+            padding: 20px;
+        }
+    }
+
+    // At the same class level of the class or <html element>
+    // Remember to use BEM naming convention
+    &.class1-modifier-1 {
+        // Direct styles of the sub class using alphabetic order
+        margin: 10px;
+        // Media queries of the sub class
+        // Remember to use @mixings for media-queries
+        @media query {
+            margin: 20px;
+        }
+    }
+
+    // Inside class of the class or <html element>
+    .inside-class {
+        // Direct styles of the inside class using alphabetic order
+        margin: 10px;
+        // Media queries of the inside class
+        // Remember to use @mixings for media-queries
+        @media query {
+            margin: 20px;
+        }
+    }
+}
+
+// REAL EXAMPLE
+.li {
+    background-color: $gray;
+    @include tablet {
+        padding-top: 10px;
+    }
+    @include desktop {
+        padding-top: 20px;
+    }
+
+    &:first-of-type {
+        margin-left: 10px;
+    }
+    &:nth-of-type(2) {
+        margin-left: 20px;
+        @include tablet {
+            margin-left: 30px;
+        }
+    }
+    &:last-of-type {
+        margin-left: 30px;
+        @include desktop {
+            margin-left: 40px;
+        }
+    }
+
+    &::after {
+        content: "1";
+        @include desktop {
+            content: "2";
+        }
+    }
+
+    &.active {
+        background-color: $primary;
+    }
+}

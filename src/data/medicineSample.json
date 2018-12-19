@@ -1,0 +1,10 @@
+
+{
+    "LogoPath":"/media/image.png",
+    "DownloadPrescribingInfo":"Prescribing Info|https://www.gilead.com",
+    "DownloadPatientInfo":"Patient Info|https://www.gilead.com",
+    "VistBrandLink":"VISIT BRAND.com|https://www.gilead.com",
+    "MedicinePicturePath":"/media/pill.png",
+    "MedicineDescription":"\u003cp\u003ePellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ipsum turpis posuere. et ultrices posuere cubilia Curae; Nullam ipsum turpis posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit ipsum sed enim elementum maximu\u003c/p\u003e\n\u003ch2\u003eOther Title\u003c/h2\u003e\n\u003cp\u003ePellentesque habitant morbi tristique senectus et netus et malesuada \u003cstrong\u003efames ac turpis egestas\u003c/strong\u003e. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ipsum turpis posuere. et ultrices posuere cubilia Curae; Nullam ipsum turpis posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit ipsum sed enim elementum maximu\u003c/p\u003e",
+    "Other":"Yes"
+}

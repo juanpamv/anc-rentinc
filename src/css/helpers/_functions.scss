@@ -1,0 +1,6 @@
+/// @param {Size} $size - font size in pixels
+@function calculateRem($size) {
+    $remSize: $size / $fontBase;
+    //Default font size on html element is 100%, equivalent to 16px;
+    @return #{$remSize}rem;
+}
