@@ -5,7 +5,7 @@ module.exports = {
 	devServer: {
 		contentBase: "./",
 		open: true,
-		openPage: "index.html",
+		openPage: "dist/",
 		port: 9000,
 		overlay: {
 			warnings: true,

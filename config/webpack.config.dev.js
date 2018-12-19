@@ -1,7 +1,8 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 var glob = require("glob");
 
 function toObject(paths) {
@@ -13,6 +14,22 @@ function toObject(paths) {
 	});
 
 	return ret;
+}
+
+var htmlConfig = {
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: './src/views/index.pug'
+		}),
+	],
+	module: {
+		rules: [
+			{ 
+				test: /\.pug$/,
+				use: ["pug-loader"]
+			},
+		]
+	}
 }
 
 var cssConfig = {
@@ -128,4 +145,4 @@ var imgConfig = {
 	}
 };
 
-module.exports = [imgConfig, cssConfig, jsConfig];
+module.exports = [imgConfig, htmlConfig, cssConfig, jsConfig];
