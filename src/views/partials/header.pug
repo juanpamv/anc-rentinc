@@ -1,6 +1,26 @@
 //- includes/header.pug
 header
     div.container
-        div.row
-            div.col
-                h1 this is the Header
+        nav.navbar.navbar-expand-lg.navbar-light2.pt-0.pb-0.pl-0.pr-0
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                a.navbar-brand(href='#')
+                    img(src='https://dummyimage.com/102x20/000/fff' alt='Logo')
+                ul.navbar-nav.mr-auto
+                    li.nav-item.d-flex.justify-content-center
+                        a.nav-link.active.d-flex.align-self-center.pl-0.pr-0(href='#') Home
+                    li.nav-item.d-flex.justify-content-center
+                        a.nav-link.d-flex.align-self-center.pl-0.pr-0(href='#') Flota
+                    li.nav-item.d-flex.justify-content-center
+                        a.nav-link.d-flex.align-self-center.pl-0.pr-0(href='#') Requisitos
+                    li.nav-item.d-flex.justify-content-center
+                        a.nav-link.d-flex.align-self-center.pl-0.pr-0(href='#') Cotizar
+                    li.nav-item.d-flex.justify-content-center
+                        a.nav-link.d-flex.align-self-center.pl-0.pr-0(href='#')
+                            | Preguntas
+                            br.hidden-xs.hidden-sm
+                            | frecuentes
+                    li.nav-item.d-flex.justify-content-center
+                        a.nav-link.d-flex.align-self-center.pl-0.pr-0(href='#') Contacto
+                    

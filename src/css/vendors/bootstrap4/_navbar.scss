@@ -111,6 +111,7 @@
   line-height: 1;
   background-color: transparent; // remove default button style
   border: $border-width solid transparent; // remove default button style
+  border-color: $navbar-light-toggler-border-color;
   @include border-radius($navbar-toggler-border-radius);
 
   @include hover-focus {
@@ -133,6 +134,7 @@
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
+  background-image: $navbar-light-toggler-icon-bg;
 }
 
 // Generate series of `.navbar-expand-*` responsive classes for configuring

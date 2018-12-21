@@ -20,15 +20,14 @@ body {
 //         HEADINGS          //
 // ========================= //
 h1 {
-    @include fontSize(40px);
+    @include fontSize(50px);
+    color: $green;
     font-family: $font-family-ProximaNova;
     font-family: var(--font-family-ProximaNova);
     font-weight: 800;
     line-height: 42px;
     margin-bottom: 10px;
-    &.small-h1 {
-        @include fontSize(32px);
-    }
+    text-transform: uppercase;
 }
 
 h2 {
