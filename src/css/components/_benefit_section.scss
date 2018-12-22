@@ -3,7 +3,6 @@
 	ul{
 		@include media-breakpoint-up(lg){
 			max-width: 758px;
-			margin: 0 auto;
 		}
 		li{
 			width: 100%;

@@ -1,7 +1,6 @@
 .intro-container{
-	&>div:first-child{
+	.info-wrapper{
 		margin-top: 36px;
-		position: relative;
 		@include media-breakpoint-up(md){
 			margin-top: 76px;
 		}
@@ -9,24 +8,18 @@
 			margin-top: 156px;
 		}
 		.btn{
-			text-transform: uppercase;
 			background-color: $green;
-			border-color: initial;
 			color: $white;
 			padding: 9px 54px;
-			border: none;
-			border-radius: 0;
 			appearance: none;
 			&:hover,
 			&:active,
 			&:focus{
 				color: $green-two;
-				box-shadow: none;
 			}
 		}
 		.arrows-down{
 			bottom: 10px;
-			position: absolute;
 			right: -43px;
     		z-index: 1;
 		}
