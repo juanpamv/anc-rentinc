@@ -1,10 +1,38 @@
 extends layout/layout.pug
 
 block content
-    div.container
-        div.row
-            div.col
-                h1 carro nuevo sin prima.
-                p Cuota fija todo el periodo de contrato.
-            div.col
-                h1 this is the title
+    div.intro-container
+        div.container
+            div.row
+                div.col-md-6.col-lg-5.offset-lg-1
+                    h1 carro nuevo sin prima.
+                    p
+                        strong Cuota fija todo el periodo de contrato.
+                    button.btn.text-center(type='button') Cotice aquí
+                    img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
+                div.col-md-6.col-lg-6
+                    img.img-fluid(src='img/tucson-header@2x.jpg' alt='Tucson')
+    div.benefit-container
+        div.container
+            div.row
+                div.col-lg-11.offset-lg-1
+                    h2 beneficios
+                    ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between
+                        li.text-center.mb-5
+                            img.d-block.mx-auto(src='img/shield-heart.svg' alt='Shield Heart')
+                            | Seguro incluido
+                        li.text-center.mb-5
+                            img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
+                            | Plazo de 1 a 3 años
+                        li.text-center.mb-5
+                            img.d-block.mx-auto(src='img/tools.svg' alt='Tools')
+                            | Mantenimiento preventivo
+                        li.text-center.mb-5.mb-md-0
+                            img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
+                            | Cuota fija
+                        li.text-center.mb-5.mb-md-0
+                            img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
+                            | Marchamo incluido
+                        li.text-center.mb-0
+                            img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
+                            | 100% se registra como gasto

@@ -8,10 +8,10 @@
 // Handles all the component margins
 @mixin componentMargin {
 	margin-bottom: 10px;
-	margin-top: 10px;
+	//margin-top: 10px;
 	@include media-breakpoint-up(md) {
 		margin-bottom: 20px;
-		margin-top: 20px;
+		//margin-top: 20px;
 	}
 }
 

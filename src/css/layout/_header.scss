@@ -10,9 +10,10 @@
 			}
 			.nav-link{
 				@include fontSize(14px);
+			//	font-family: 'gotham_mediumregular';
 				color: $white;
 				font-weight: 500;
-				line-height: 1.43;
+				line-height: normal;
 				&:hover,
 				&.active{
 					color: $green-two;
