@@ -1,0 +1,19 @@
+.fleets{
+    margin-bottom: 100px;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 150px;
+    }
+    
+    &__profesional{
+        margin-bottom: 40px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    h4{
+        margin-bottom: 20px;
+    }
+}

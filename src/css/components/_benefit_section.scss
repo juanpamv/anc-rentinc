@@ -2,6 +2,8 @@
 	@include componentPadding;
 	background-color: $gray;
 
+	padding-bottom: 150px;
+
 	@include media-breakpoint-up(md){
 		padding-bottom: 430px;
 	}
