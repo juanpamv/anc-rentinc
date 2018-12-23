@@ -2,6 +2,12 @@
     margin-top: -200px;
     margin-bottom: 100px;
 
+    @include media-breakpoint-up(md){
+        background-image: url("/dist/img/home/gray-bg.svg");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+	}
+
     @include media-breakpoint-up(lg){
 		margin-bottom: 180px;
 	}
@@ -9,5 +15,21 @@
     .centered-image{
         margin-bottom: 54px;
         max-width: 100%;
+    }
+
+    .plan{
+        margin-bottom: 25px;
+
+        @include media-breakpoint-up(lg){
+            margin-bottom: 50px;
+        }
+
+        img{
+            width: 80px;
+
+            @include media-breakpoint-up(lg){
+                width: auto;
+            }
+        }
     }
 }
