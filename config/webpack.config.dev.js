@@ -39,10 +39,10 @@ var cssConfig = {
 		filename: "[name].css",
 		path: path.resolve(__dirname, "./../dist")
 	},
-	stats: {
+	/*stats: {
 		errors: false,
 		errorDetails: false
-	},
+	},*/
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: "[name].css"
@@ -68,7 +68,17 @@ var cssConfig = {
 					},
 					"sass-loader"
 				]
-			}
+			},
+			{
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/'
+                    }
+                }]
+            }
 		]
 	}
 };

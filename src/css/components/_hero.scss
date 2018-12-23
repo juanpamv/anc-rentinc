@@ -1,0 +1,55 @@
+.hero{
+	height: 100vh;
+	position: relative;
+
+	.hero-image{
+		background-image: url("/dist/img/tucson-header@3x.jpg");
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+		position: absolute;
+
+		@include media-breakpoint-up(md) {
+			right: 0;
+        }
+
+		@include media-breakpoint-up(lg) {
+            transform: translateY(48px);
+        }
+	}
+
+	.info-wrapper{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		p{
+			margin-bottom: 20px;
+		}
+
+		.btn{
+			background-color: $green;
+			color: $white;
+			padding: 9px 54px;
+			appearance: none;
+			&:hover,
+			&:active,
+			&:focus{
+				color: $light-green;
+			}
+		}
+	}
+
+	.scroll-next{
+		bottom: 10vh;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		z-index: 10;
+
+		.arrows-down{
+			height: 51px;
+			width: 56px;
+		}
+	}
+}

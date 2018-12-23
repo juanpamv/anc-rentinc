@@ -1,38 +1,88 @@
 extends layout/layout.pug
 
 block content
-    div.intro-container
+    div.hero
         div.container
             div.row
-                div.info-wrapper.col-md-6.col-lg-5.offset-lg-1.position-relative
+                div.info-wrapper.col-md-6.col-lg-5.offset-lg-1
                     h1.text-uppercase carro nuevo sin prima.
                     p
                         strong Cuota fija todo el periodo de contrato.
-                    button.btn.text-center.text-uppercase.border-0.rounded-0(type='button') Cotice aquí
-                    img.arrows-down.d-none.d-md-block.position-absolute(src='img/arrows-down.svg' alt='Arrows Down')
-                div.col-md-6.col-lg-6
-                    img.img-fluid(src='img/tucson-header@2x.jpg' alt='Tucson')
-    div.benefit-container
+                    a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aquí
+                div.d-none.d-md-block.col-md-6.col-lg-6.hero-image
+                span.scroll-next
+                    img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
+    section.benefit-container
         div.container
             div.row
                 div.col-lg-11.offset-lg-1
                     h2.text-uppercase beneficios
+                div.col-lg-8.offset-lg-2
                     ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mx-lg-auto
                         li.text-center.mb-5
                             img.d-block.mx-auto(src='img/shield-heart.svg' alt='Shield Heart')
-                            | Seguro incluido
+                            h4 
+                                | Seguro
+                                br
+                                | incluido
                         li.text-center.mb-5
                             img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
-                            | Plazo de 1 a 3 años
+                            h4 
+                                | Plazo de 1
+                                br
+                                | a 3 años
                         li.text-center.mb-5
                             img.d-block.mx-auto(src='img/tools.svg' alt='Tools')
-                            | Mantenimiento preventivo
+                            h4 
+                                | Mantenimiento 
+                                br
+                                | preventivo
                         li.text-center.mb-5.mb-md-0
                             img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
-                            | Cuota fija
+                            h4 
+                                | Cuota
+                                br
+                                | fija
                         li.text-center.mb-5.mb-md-0
                             img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
-                            | Marchamo incluido
+                            h4 
+                                | Marchamo
+                                br
+                                | incluido
                         li.text-center.mb-0
                             img.d-block.mx-auto(src='img/clock.svg' alt='Clock')
-                            | 100% se registra como gasto
+                            h4 
+                                | 100% se registra 
+                                br
+                                | como gasto
+    section.plans.container
+        div.row
+            div.col
+                img.d-block.mx-auto.centered-image(src='img/alquiler-vehiculos.jpg' srcset="img/alquiler-vehiculos.jpg 1x, img/alquiler-vehiculos@2x.jpg 2x, img/alquiler-vehiculos@3x.jpg 3x" alt='alquiler de vehiculos')
+        div.row
+            div.col-lg-8.offset-lg-2
+                h2.text-uppercase Planes
+        div.row
+            div.col-lg-4.offset-lg-2
+                div.media
+                    img.align-self-center.mr-3(src='img/home/01.svg' alt='Generic placeholder image')
+                    .media-body
+                        h5.mt-0 Viajeros de negocios
+                        p.mb-0
+                        | Cuota fija todo el periodo de contrato. Cuota fija todo el periodo de contrato.
+        div.row
+            div.col-lg-4.offset-lg-5
+                div.media
+                    img.align-self-center.mr-3(src='img/home/02.svg' alt='Generic placeholder image')
+                    .media-body
+                        h5.mt-0 Viajeros de negocios
+                        p.mb-0
+                        | Cuota fija todo el periodo de contrato. Cuota fija todo el periodo de contrato.
+        div.row
+            div.col-lg-4.offset-lg-2
+                div.media
+                    img.align-self-center.mr-3(src='img/home/03.svg' alt='Generic placeholder image')
+                    .media-body
+                        h5.mt-0 Viajeros de negocios
+                        p.mb-0
+                        | Cuota fija todo el periodo de contrato. Cuota fija todo el periodo de contrato.

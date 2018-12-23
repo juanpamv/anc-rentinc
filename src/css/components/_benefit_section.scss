@@ -1,5 +1,11 @@
 .benefit-container{
+	@include componentPadding;
 	background-color: $gray;
+
+	@include media-breakpoint-up(md){
+		padding-bottom: 430px;
+	}
+	
 	ul{
 		@include media-breakpoint-up(lg){
 			max-width: 758px;
@@ -10,5 +16,9 @@
 				width: 190px;
 			}
 		}
+	}
+
+	img{
+		margin-bottom: 14px;
 	}
 }
