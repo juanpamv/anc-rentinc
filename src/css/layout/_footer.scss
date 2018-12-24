@@ -3,13 +3,37 @@
 	color: $white;
 	padding-bottom: 40px;
 	padding-top: 40px;
+	text-align: center;
 
-	h4{
-		color: $white;
-		@include fontSize(16px);
+	@include media-breakpoint-up(md) {
+        text-align: left;
+	}
+	
+	.logo{
+		margin-bottom: 20px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
 	}
 
-	.footnote{
-		@include fontSize(14px);
+	h4{
+		@include fontSize(16px);
+		color: $white;
+		margin-bottom: 21px;
+	}
+
+	.info{
+		border-bottom: solid 1px $white;
+		margin-bottom: 34px;
+		padding-bottom: 60px;
+	}
+
+	p{
+		@include fontSize(16px);
+
+		&.footnote{
+			@include fontSize(14px);
+		}
 	}
 }

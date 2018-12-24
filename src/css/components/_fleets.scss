@@ -4,6 +4,13 @@
     @include media-breakpoint-up(md) {
         margin-bottom: 150px;
     }
+
+    h2{
+        &::after{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
     
     &__profesional{
         margin-bottom: 40px;
