@@ -1,0 +1,28 @@
+.profesional-container{
+	@include componentPadding;
+	
+
+	padding-bottom: 150px;
+
+	@include media-breakpoint-up(md){
+		padding-bottom: 430px;
+	}
+	
+	h2{
+		&::after{
+			margin-bottom: 65px;
+		}
+	}
+
+	ul{
+		li{
+			.media{
+				&:not(:last-child){
+					border-right: 1px solid $dark-gray;
+				}
+			}
+		}
+	}
+
+}
+
