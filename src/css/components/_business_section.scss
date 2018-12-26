@@ -1,0 +1,32 @@
+.business-container{
+    @include media-breakpoint-up(md){
+        .row:first-child{
+            min-height: 302px;
+        }
+        min-height: 302px;
+    }
+
+    h2{
+        &::after{
+            margin-bottom: 40px;
+        }
+    }
+    
+    .hero-image{
+        background: url("/dist/img/fleet/vehiculo-carga@3x.jpg") no-repeat;
+        background-size: cover;
+        background-position: top;
+        right: 0;
+        height: 100vh;
+        
+        max-height: 302px;
+        @include media-breakpoint-up(lg){
+            position: absolute;
+        }
+    }
+    .cargo-container{
+        @include media-breakpoint-up(lg){
+            margin-top: 82px;
+        }
+    }
+}
