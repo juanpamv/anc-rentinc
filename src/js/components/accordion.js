@@ -19,7 +19,7 @@ var accordion = (function() {
 
     
     function toggleIcon() {
-        $(this).toggleClass('opened');
+        $(this).toggleClass('open-accordion');
         $(this).find(".toggle-accordion").text($(this).text() == 'Ver más' ? 'Ver menos' : 'Ver más');
     }
 
