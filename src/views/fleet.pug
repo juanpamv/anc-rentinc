@@ -20,7 +20,7 @@ block content
                         h5.mb-4 Sedanes                   
                         .row
                             .col-xl-9
-                                #multiCollapseExample1.collapse.multi-collapse.show
+                                #sedanCollapse1.collapse.multi-collapse.show
                                     .card.card-body
                                         ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
                                             li.text-center.mx-auto.mb-5.mb-md-0
@@ -68,7 +68,7 @@ block content
                             
                         .row
                             .col-xl-9.offset-xl-2
-                                #multiCollapseExample2.collapse.multi-collapse
+                                #sedanCollapse2.collapse.multi-collapse
                                     .card.card-body
                                         ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
                                             li.text-center.mx-auto.mb-5.mb-md-0
@@ -113,10 +113,85 @@ block content
                                                         img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
                                                         .media-body.text-left.text-nowrap 1.5 lts
                                                 span.text-center 4 puertas
-                        div.accordion-container.text-center(data-action='accordion' data-toggle='collapse' data-target='#multiCollapseExample2' aria-expanded='false' aria-controls='multiCollapseExample2')
-                            .plus-minus-container.mx-auto
-                                .wrapper.h-100.position-relative.mx-auto
-                                    .horizontal.position-absolute
-                                    .vertical.position-absolute
-                            span.toggle-accordion.mt-3.d-block Ver más
-                              
+                                div.accordion-container.text-center(data-action='accordion' data-toggle='collapse' data-target='#sedanCollapse2' aria-expanded='false' aria-controls='suvCollapse2')
+                                    .plus-minus-container.mx-auto
+                                        .wrapper.h-100.position-relative.mx-auto
+                                            .horizontal.position-absolute
+                                            .vertical.position-absolute
+                                    span.toggle-accordion.mt-3.d-block Ver más
+                        
+    section.profesional-container.suvs.pt-3
+        div.container
+                div.row
+                    div.col-lg-11.offset-lg-1            
+                        .row
+                            .col-md-5.img-container
+                                img.img-fluid(src='img/fleet/flota-suv.jpg' srcset="img/fleet/flota-suv.jpg 1x, img/fleet/flota-suv@2x.jpg 2x, img/fleet/flota-suv@3x.jpg 3x" alt='flota suv')
+                            .col-md-7.mt-5
+                                h5.mb-4 SUVS
+                                #suvCollapse1.collapse.multi-collapse.show
+                                    .card.card-body
+                                        ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
+                                            li.text-center.mx-auto.mb-5.mb-md-0
+                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv1.png' srcset="img/fleet/suv1.png 1x, img/fleet/suv1@2x.png 2x, img/fleet/suv1@3x.png 3x" alt='alquiler de suv')
+                                                h5.mb-3 Toyota Yaris
+                                                ul.list-unstyled.d-flex.mb-3
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                                        .media-body.text-left 5
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                                        .media-body.text-left 5
+                                                    li.media
+                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                                        .media-body.text-left.text-nowrap 1.5 lts
+                                            li.text-center.mx-auto.mb-5.mb-md-0
+                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv2.png' srcset="img/fleet/suv2.png 1x, img/fleet/suv2@2x.png 2x, img/fleet/suv2@3x.png 3x" alt='alquiler de suv')
+                                                h5.mb-3 Toyota Yaris
+                                                ul.list-unstyled.d-flex.mb-3
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                                        .media-body.text-left 5
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                                        .media-body.text-left 5
+                                                    li.media
+                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                                        .media-body.text-left.text-nowrap 1.5 lts
+                        .row
+                            .col.mt-4
+                                div.accordion-container.text-center(data-action='accordion' data-toggle='collapse' data-target='#suvCollapse2' aria-expanded='false' aria-controls='suvCollapse2')
+                                    .plus-minus-container.mx-auto
+                                        .wrapper.h-100.position-relative.mx-auto
+                                            .horizontal.position-absolute
+                                            .vertical.position-absolute
+                                    span.toggle-accordion.mt-3.d-block Ver más
+                                #suvCollapse2.collapse.multi-collapse
+                                    .card.card-body
+                                        ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
+                                            li.text-center.mx-auto.mb-5.mb-md-0
+                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv1.png' srcset="img/fleet/suv1.png 1x, img/fleet/suv1@2x.png 2x, img/fleet/suv1@3x.png 3x" alt='alquiler de suv')
+                                                h5.mb-3 Toyota Yaris
+                                                ul.list-unstyled.d-flex.mb-3
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                                        .media-body.text-left 5
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                                        .media-body.text-left 5
+                                                    li.media
+                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                                        .media-body.text-left.text-nowrap 1.5 lts
+                                            li.text-center.mx-auto.mb-5.mb-md-0
+                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv2.png' srcset="img/fleet/suv2.png 1x, img/fleet/suv2@2x.png 2x, img/fleet/suv2@3x.png 3x" alt='alquiler de suv')
+                                                h5.mb-3 Toyota Yaris
+                                                ul.list-unstyled.d-flex.mb-3
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                                        .media-body.text-left 5
+                                                    li.media.pr-2.mr-2
+                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                                        .media-body.text-left 5
+                                                    li.media
+                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                                        .media-body.text-left.text-nowrap 1.5 lts                                                    
