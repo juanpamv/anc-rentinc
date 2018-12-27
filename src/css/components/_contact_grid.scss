@@ -1,10 +1,12 @@
 .contact-grid{
-    background-image: url("/dist/img/home/gray-bg.svg");
-    background-position: left top;
-    background-size: 40% 100%;
-    background-repeat: no-repeat;
-    
     padding: 200px 0;
+
+    @include media-breakpoint-up(md) {
+        background-image: url("/dist/img/home/gray-bg.svg");
+        background-position: left top;
+        background-size: 40% 100%;
+        background-repeat: no-repeat;
+    }
 
 
     h1{
@@ -21,6 +23,24 @@
             @include media-breakpoint-up(md) {
                 margin-bottom: 140px;
             }
+        }
+    }
+
+    .btn{
+        background-color: $green;
+        border-radius: 0;
+        border: none;
+        color: $white;
+        padding: 9px 54px;
+        appearance: none;
+        &:hover,
+        &:active,
+        &:focus{
+            color: $light-green;
+        }
+
+        &.cancel{
+            background-color: $light-green;
         }
     }
 }
