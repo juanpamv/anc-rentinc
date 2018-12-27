@@ -1,5 +1,10 @@
-.physical-persons{
-    margin-top: 140px;
+.physical-person{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    @include media-breakpoint-up(md){
+        margin-bottom: 248px;
+        margin-top: 140px;
+    }
     h2{
         &::after{
             margin-right: auto;
@@ -7,7 +12,7 @@
         }
     }
     .bg-container{
-        background: #e6e7e8;
+        background: $gray;
         height: 90%;
         left: 50%;
         top: 135px;
