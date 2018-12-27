@@ -25,6 +25,10 @@ var htmlConfig = {
 			filename: 'fleet.html',
 			template: './src/views/fleet.pug'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'requirements.html',
+			template: './src/views/requirements.pug'
+		}),
 	],
 	module: {
 		rules: [

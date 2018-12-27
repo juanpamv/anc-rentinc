@@ -1,0 +1,8 @@
+.persons{
+    h2{
+        &::after{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
