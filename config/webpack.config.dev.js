@@ -33,6 +33,10 @@ var htmlConfig = {
 			filename: 'requirements.html',
 			template: './src/views/requirements.pug'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'quote.html',
+			template: './src/views/quote.pug'
+		}),
 	],
 	module: {
 		rules: [
