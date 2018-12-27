@@ -29,6 +29,10 @@ var htmlConfig = {
 			filename: 'contact.html',
 			template: './src/views/contact.pug'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'requirements.html',
+			template: './src/views/requirements.pug'
+		}),
 	],
 	module: {
 		rules: [
