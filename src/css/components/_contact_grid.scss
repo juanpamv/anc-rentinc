@@ -1,0 +1,26 @@
+.contact-grid{
+    background-image: url("/dist/img/home/gray-bg.svg");
+    background-position: left top;
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    
+    padding: 200px 0;
+
+
+    h1{
+        color: $black;
+
+        &::after{
+            background-color: $light-green;
+            content: '';
+            display: block;
+            height: 5px;
+            margin-bottom: 50px;
+            width: 100px;
+    
+            @include media-breakpoint-up(md) {
+                margin-bottom: 140px;
+            }
+        }
+    }
+}
