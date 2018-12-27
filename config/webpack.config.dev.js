@@ -26,6 +26,10 @@ var htmlConfig = {
 			template: './src/views/fleet.pug'
 		}),
 		new HtmlWebpackPlugin({
+			filename: 'contact.html',
+			template: './src/views/contact.pug'
+		}),
+		new HtmlWebpackPlugin({
 			filename: 'requirements.html',
 			template: './src/views/requirements.pug'
 		}),
