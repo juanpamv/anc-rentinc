@@ -1,8 +1,16 @@
-.persons{
+.physical-persons{
+    margin-top: 140px;
     h2{
         &::after{
             margin-right: auto;
             margin-left: auto;
         }
+    }
+    .bg-container{
+        background: #e6e7e8;
+        height: 90%;
+        left: 50%;
+        top: 135px;
+        transform: translateX(-50%);
     }
 }
