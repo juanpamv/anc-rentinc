@@ -21,6 +21,19 @@ export function scrollTo(element) {
     }
 }
 
+// Get element position
+export function scrollPosition(element){
+    let top = window.scrollY,
+        bottom = window.scrollY + window.innerHeight,
+        elementTop = element.offsetTop;
+
+    if(!element.hasClass('in')){
+        if((bottom - 50) >= elementTop){
+            element.addClass('in')
+        }
+    }
+}
+
 // Validate necessary key codes
 /**
  * charCode [48,57]     Numbers 0 to 9
