@@ -34,6 +34,10 @@ var htmlConfig = {
 			template: './src/views/requirements.pug'
 		}),
 		new HtmlWebpackPlugin({
+			filename: 'questions.html',
+			template: './src/views/questions.pug'
+		}),
+		new HtmlWebpackPlugin({
 			filename: 'quote.html',
 			template: './src/views/quote.pug'
 		}),
