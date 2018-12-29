@@ -8,7 +8,7 @@ body {
 //         HEADINGS          //
 // ========================= //
 h1, h2 {
-    @include fontSize(40px);
+    @include fontSize(35px);
     font-family: $font-gotham-bold;
     font-weight: 800;
     line-height: normal;
