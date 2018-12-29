@@ -17,10 +17,7 @@ var accordion = (function() {
     /* =================== Public methods ================= */
 
     
-    function toggleIcon(event) {
-        var target = $( event.target )
-        console.log(target);
-        console.log($(this));
+    function toggleIcon() {
         $(this).toggleClass('open-accordion');
         $(this).find(".toggle-accordion").text($(this).text() == 'Ver más' ? 'Ver menos' : 'Ver más');
     }
@@ -39,7 +36,6 @@ var accordion = (function() {
     function init() {
         cacheDom();
         bindEvents();
-        console.log("Hello from example");
     }
 
     /* =============== export public methods =============== */
