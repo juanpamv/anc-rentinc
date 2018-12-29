@@ -4,12 +4,12 @@ block content
     div.hero
         div.container
             div.row
-                div.info-wrapper.col-md-6.col-lg-5.offset-lg-1
+                div.info-wrapper.position-absolute.col-md-6.col-lg-5.offset-lg-1
                     h1.text-uppercase requisitos
                     p
                         strong De manera ágil y accesible, las personas físicas o jurídicas pueden optar por el Renting:
                     a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aquí
-                div.d-none.d-md-block.col-md-6.col-lg-6.hero-image
+                div.col-md-6.col-lg-6.hero-image
                 span.scroll-next
                     img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
     section.physical-person
@@ -55,10 +55,10 @@ block content
                             p.mb-0
                             | Recibo de servicio público o privado donde indique la dirección física de la persona.
 
-    section.legal-person   
+    section.legal-person.position-relative.mb-0
+        div.col-md-6.position-absolute.bg-container.h-100
         div.container
-            div.row.position-relative
-                div.col-md-6.position-absolute.bg-container
+            div.row
                 div.col-md-6.col-lg-5.offset-lg-1
                     h2.text-uppercase.mb-0 Personas Jurídicas
                 div.col-md-4.offset-md-1
@@ -73,32 +73,34 @@ block content
                                 .media-body
                                     p.mb-0
                                     | Copia de la cédula jurídica.
+    section.legal-person.mt-0
+        div.container
             div.row
                 div.col-md-6.col-xl-4.offset-md-1.offset-lg-3.mb-5.mt-5
-                    div.media.plan
-                                img.align-self-center.mr-3(src='img/requirements/legal/03.png' srcset="img/requirements/legal/03.png 1x, img/requirements/legal/03@2x.png 2x, img/requirements/legal/03@3x.png 3x" alt='03')
-                                .media-body.align-self-center
+                    div.media.plan.flex-column.flex-md-row
+                                img.align-self-center.mr-md-3.mb-4.mb-md-0(src='img/requirements/legal/03.png' srcset="img/requirements/legal/03.png 1x, img/requirements/legal/03@2x.png 2x, img/requirements/legal/03@3x.png 3x" alt='03')
+                                .media-body.align-self-md-center
                                     p.mb-0
                                     | Copia del documento de identificación del representante legal de la empresa.
             div.row
                 div.col-md-6.col-xl-4.offset-md-4.offset-lg-6.mb-5
-                    div.media.plan
-                                img.align-self-center.mr-3(src='img/requirements/legal/legal/04.png' srcset="img/requirements/legal/04.png 1x, img/requirements/legal/04@2x.png 2x, img/requirements/legal/04@3x.png 3x" alt='04')
-                                .media-body.align-self-center
+                    div.media.plan.flex-column.flex-md-row
+                                img.align-self-center.mr-md-3.mb-4.mb-md-0(src='img/requirements/legal/legal/04.png' srcset="img/requirements/legal/04.png 1x, img/requirements/legal/04@2x.png 2x, img/requirements/legal/04@3x.png 3x" alt='04')
+                                .media-body.align-self-md-center
                                     p.mb-0
                                     | Perfil detallado de la empresa.
             div.row
                 div.col-md-6.col-xl-4.offset-md-1.offset-lg-3.mb-5
-                    div.media.plan
-                                img.align-self-center.mr-3(src='img/requirements/legal/legal/05.png' srcset="img/requirements/legal/05.png 1x, img/requirements/legal/05@2x.png 2x, img/requirements/legal/05@3x.png 3x" alt='05')
-                                .media-body.align-self-center
+                    div.media.plan.flex-column.flex-md-row
+                                img.align-self-center.mr-md-3.mb-4.mb-md-0(src='img/requirements/legal/legal/05.png' srcset="img/requirements/legal/05.png 1x, img/requirements/legal/05@2x.png 2x, img/requirements/legal/05@3x.png 3x" alt='05')
+                                .media-body.align-self-md-center
                                     p.mb-0
                                     | Declaraciones de renta de los dos últimos períodos fiscales.  
             div.row
                 div.col-md-6.col-xl-4.offset-md-4.offset-lg-6.mb-5
-                    div.media.plan
-                                img.align-self-center.mr-3(src='img/requirements/legal/legal/06.png' srcset="img/requirements/legal/06.png 1x, img/requirements/legal/06@2x.png 2x, img/requirements/legal/06@3x.png 3x" alt='06')
-                                .media-body.align-self-center
+                    div.media.plan.flex-column.flex-md-row
+                                img.align-self-center.mr-md-3.mb-4.mb-md-0(src='img/requirements/legal/legal/06.png' srcset="img/requirements/legal/06.png 1x, img/requirements/legal/06@2x.png 2x, img/requirements/legal/06@3x.png 3x" alt='06')
+                                .media-body.align-self-md-center
                                     p.mb-0
                                     | Recibo de servicio público o privado donde indique la dirección física de la empresa.               
             

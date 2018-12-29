@@ -1,16 +1,20 @@
 .hero{
-	height: 100vh;
+	height: 60vh;
 	position: relative;
+	@include media-breakpoint-up(md) {
+		height: 100vh;
+	}
 
 	.hero-image{
 		background-image: url("/dist/img/tucson-header@3x.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		height: 100vh;
+		height: 60vh;
 		position: absolute;
 
 		@include media-breakpoint-up(md) {
+			height: 100vh;
 			right: 0;
         }
 
@@ -20,9 +24,19 @@
 	}
 
 	.info-wrapper{
-		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+
+		@include media-breakpoint-down(sm){
+			background-color: rgba(0,0,0,0.6);
+			z-index: 1;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			color: $white;
+			h1{
+				color: $desaturated-green;
+			}
+		}
 
 		p{
 			margin-bottom: 20px;
