@@ -1,0 +1,106 @@
+/* The animation code */
+
+/* Slide Right effect */
+@keyframes slide-right {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-right{
+    transition-property: all;
+    animation-name: slide-right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* fade in effect */
+@keyframes fade-in {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    transition-property: all;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* image animation effect */
+@keyframes show-image {
+    from {
+        opacity: 1;
+        transform: translate(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(100%);
+    }
+}
+
+.screen{
+    background-color: $light-green;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.show-image{
+    transition-property: all;
+    animation-name: show-image;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* image-animation effect */
+@keyframes bg-animation {
+    from {
+        background-position: -1000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.bg-animation{
+    transition-property: all;
+    animation-name: bg-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+/* Ganeral animation classes */
+.animate{
+    opacity: 0;
+}
+
+/* Ganeral animation delay classes */
+.delay-04{
+    animation-delay: 0.4s;
+}
+
+.delay-05{
+    animation-delay: 0.5s;
+}
+
+.delay-08{
+    animation-delay: 0.8s;
+}
+
+.delay-5{
+    animation-delay: 5s;
+}

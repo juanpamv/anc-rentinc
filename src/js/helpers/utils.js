@@ -24,13 +24,17 @@ export function scrollTo(element) {
 // Get element position
 export function scrollPosition(element){
     let top = window.scrollY,
-        bottom = window.scrollY + window.innerHeight,
-        elementTop = element.offsetTop;
+        bottom = window.scrollY + window.innerHeight;
 
-    if(!element.hasClass('in')){
-        if((bottom - 50) >= elementTop){
-            element.addClass('in')
-        }
+    for (let index = 0; index < element.length; index++) {
+        let elementTop = $(element[index]).offset().top,
+        elementAnimations = $(element[index]).data("animations");
+
+        if(!$(element[index]).hasClass('in')){
+            if((bottom - 50) >= elementTop){
+                $(element[index]).addClass(elementAnimations);
+            }
+        }     
     }
 }
 
