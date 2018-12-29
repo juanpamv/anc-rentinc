@@ -6,40 +6,40 @@
 // TEMPLATE
 // Component
 
-var accordion = (function() {
+import { scrollPosition } from "../helpers/utils";
+
+var fleet = (function() {
     "use strict";
 
     // Variable Definitions - Public Variables
     var DOM = {
-        plusSign: $('.accordion-container')
+        
     };
 
     /* =================== Public methods ================= */
 
-    
-    function toggleIcon(event) {
-        var target = $( event.target )
-        console.log(target);
-        console.log($(this));
-        $(this).toggleClass('open-accordion');
-        $(this).find(".toggle-accordion").text($(this).text() == 'Ver más' ? 'Ver menos' : 'Ver más');
+    function windowOnScroll(){
+        console.log("Hello");
+        scrollPosition($('.animate'));
     }
+    
+    
 
     // cache DOM elements
     function cacheDom() {
-        DOM.plusSign = $('.accordion-container');
+        DOM.animatedItems = $('.animate');
+        DOM.window = $(window);
     }
  
     // Bind Events To UI
     function bindEvents() {
-        DOM.plusSign.click(toggleIcon);
+        DOM.window.on('scroll', windowOnScroll)
     }
 
     // Component Init
     function init() {
         cacheDom();
         bindEvents();
-        console.log("Hello from example");
     }
 
     /* =============== export public methods =============== */
@@ -48,4 +48,4 @@ var accordion = (function() {
     };
 })();
 
-export { accordion };
+export { fleet };
