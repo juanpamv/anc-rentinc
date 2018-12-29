@@ -1,4 +1,4 @@
-.full-width-hero-bg{
+@mixin full-width-hero-bg{
 	background: rgba(255,255,255,0.6);
 	z-index: 1;
 	height: 100%;
@@ -39,11 +39,11 @@
 		transform: translateY(-50%);
 
 		@include media-breakpoint-down(sm){
-			@extend .full-width-hero-bg;
+			@include full-width-hero-bg;
 		}
 
 		&.full-width{
-			@extend .full-width-hero-bg;
+			@include full-width-hero-bg;
 			@include media-breakpoint-up(md){
 				&+.hero-image{
 					transform: translateY(0);
