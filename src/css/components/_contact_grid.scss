@@ -8,6 +8,10 @@
         background-repeat: no-repeat;
     }
 
+    @include media-breakpoint-up(lg) {
+        background-size: 50% 100%;
+    }
+
 
     h1{
         color: $black;

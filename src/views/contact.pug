@@ -4,23 +4,23 @@ block content
     div.contact-grid
         section.container
             div.row
-                div.col-lg-5
+                div.col-md-5.col-lg-5.offset-lg-1
                     h1.text-uppercase Contacto
-                div.col-lg-4.offset-lg-1
+                div.col-md-5.offset-md-1.col-lg-4.offset-lg-1
                     form(action="")
-                        div.form-group
+                        div.form-group.animate.slide-right
                             label(for='name') Nombre:
                             input#name.form-control(type='text' aria-describedby='name' placeholder='')
-                        div.form-group
+                        div.form-group.animate.slide-right.delay-04
                             label(for='company') Empresa:
                             input#company.form-control(type='text' aria-describedby='company' placeholder='')
-                        div.form-group
+                        div.form-group.animate.slide-right.delay-08
                             label(for='email') Email:
                             input#email.form-control(type='email' aria-describedby='email' placeholder='')
-                        div.form-group
+                        div.form-group.animate.slide-right.delay-12
                             label(for='phone') Teléfono:
                             input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
-                        div.form-group
+                        div.form-group.animate.slide-right.delay-16
                             label(for='brand') Observaciones:
                             <textarea class="form-control" id="brand" rows="3"></textarea>
                         <button type="submit" class="btn btn-primary cancel">Cancelar</button>

@@ -26,7 +26,7 @@ block content
                                 #sedanCollapse1.collapse.multi-collapse.show
                                     .card.card-body
                                         ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
-                                            li.text-center.mx-auto.mb-5.mb-md-0
+                                            li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
                                                 img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
                                                 h5.mb-3 Toyota Yaris
                                                 ul.list-unstyled.d-flex.mb-3
@@ -40,7 +40,7 @@ block content
                                                         img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
                                                         .media-body.text-left.text-nowrap 1.5 lts
                                                 span.text-center 4 puertas
-                                            li.text-center.mx-auto.mb-5.mb-md-0
+                                            li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
                                                 img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan2.png' srcset="img/fleet/sedan2.png 1x, img/fleet/sedan2@2x.png 2x, img/fleet/sedan2@3x.png 3x" alt='alquiler de sedanes')
                                                 h5.mb-3 Toyota Yaris
                                                 ul.list-unstyled.d-flex.mb-3
@@ -54,7 +54,7 @@ block content
                                                         img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
                                                         .media-body.text-left.text-nowrap 1.5 lts
                                                 span.text-center 4 puertas
-                                            li.text-center.mx-auto
+                                            li.text-center.mx-auto.animate.delay-08(data-animations="slide-right")
                                                 img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan3.png' srcset="img/fleet/sedan3.png 1x, img/fleet/sedan3@2x.png 2x, img/fleet/sedan3@3x.png 3x" alt='alquiler de sedanes')
                                                 h5.mb-3 Toyota Yaris
                                                 ul.list-unstyled.d-flex.mb-3
@@ -131,13 +131,14 @@ block content
                 div.col-lg-11.offset-lg-1        
                     .row
                         .col-md-5.img-container
-                            img.img-fluid(src='img/fleet/flota-suv.jpg' srcset="img/fleet/flota-suv.jpg 1x, img/fleet/flota-suv@2x.jpg 2x, img/fleet/flota-suv@3x.jpg 3x" alt='flota suv')
+                            .screen.animate(data-animations="show-image")
+                            img.img-fluid.animate(data-animations="fade-in" src='img/fleet/flota-suv.jpg' srcset="img/fleet/flota-suv.jpg 1x, img/fleet/flota-suv@2x.jpg 2x, img/fleet/flota-suv@3x.jpg 3x" alt='flota suv')
                         .col-md-7.mt-5
                             h5.text-uppercase.mb-4 SUVS
                             #suvCollapse1.collapse.multi-collapse.show
                                 .card.card-body
                                     ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-md-column.flex-lg-row
-                                        li.text-center.mx-auto.mb-5.mb-md-0
+                                        li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
                                             img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv1.png' srcset="img/fleet/suv1.png 1x, img/fleet/suv1@2x.png 2x, img/fleet/suv1@3x.png 3x" alt='alquiler de suv')
                                             h5.mb-3 Toyota Yaris
                                             ul.list-unstyled.d-flex.mb-3
@@ -150,7 +151,7 @@ block content
                                                 li.media
                                                     img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
                                                     .media-body.text-left.text-nowrap 1.5 lts
-                                        li.text-center.mx-auto.mb-5.mb-md-0
+                                        li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
                                             img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv2.png' srcset="img/fleet/suv2.png 1x, img/fleet/suv2@2x.png 2x, img/fleet/suv2@3x.png 3x" alt='alquiler de suv')
                                             h5.mb-3 Toyota Yaris
                                             ul.list-unstyled.d-flex.mb-3
@@ -208,13 +209,14 @@ block content
                 div.col-md-6.col-lg-5.offset-lg-1
                         h2.text-uppercase empresarial
                 div.d-none.d-md-block.col-md-12.col-lg-6.hero-image.mb-md-5.mb-lg-0
+                    .screen.animate(data-animations="show-image")
             .row
                 div.col-lg-11.offset-lg-1.cargo-container
                     h5.mb-4 Carga Liviana
                     #cargoCollapse1.collapse.multi-collapse.show
                         .card.card-body
                             ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-column.flex-md-row
-                                li.text-center.mx-auto.mb-5.mb-md-0
+                                li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
                                     img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
                                     h5.mb-3 Toyota Yaris
                                     ul.list-unstyled.d-flex.mb-3
@@ -227,7 +229,7 @@ block content
                                         li.media
                                             img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
                                             .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0
+                                li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
                                     img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
                                     h5.mb-3 Toyota Yaris
                                     ul.list-unstyled.d-flex.mb-3
@@ -240,7 +242,7 @@ block content
                                         li.media
                                             img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
                                             .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0
+                                li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-08(data-animations="slide-right")
                                     img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
                                     h5.mb-3 Toyota Yaris
                                     ul.list-unstyled.d-flex.mb-3

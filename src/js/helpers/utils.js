@@ -31,7 +31,7 @@ export function scrollPosition(element){
         elementAnimations = $(element[index]).data("animations");
 
         if(!$(element[index]).hasClass('in')){
-            if((bottom - 50) >= elementTop){
+            if((bottom - 100) >= elementTop){
                 $(element[index]).addClass(elementAnimations);
             }
         }     

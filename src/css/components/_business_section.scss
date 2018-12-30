@@ -18,8 +18,8 @@
         background-position: top;
         right: 0;
         height: 100vh;
-        
         max-height: 302px;
+        overflow: hidden;
         @include media-breakpoint-up(lg){
             position: absolute;
         }
