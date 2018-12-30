@@ -31,6 +31,30 @@
 			margin-top: -9px;
 		}
 	}
+
+	&.small-sign{
+		top: 0;
+    	right: 0;
+		.plus-minus-container{
+			height: 22px;
+			width: 22px;
+			.wrapper{
+				top:50%;
+				.horizontal{
+					width: 22px;
+					height: 6px;
+					margin-left: -50%;
+					margin-top: -3px;
+				}
+				.vertical{
+					width: 6px;
+					height: 22px;
+					margin-left: -3px;
+					margin-top: -11px;
+				}
+			}
+		}
+	}
 	  
 	&.open-accordion {
 		.vertical {
