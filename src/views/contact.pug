@@ -1,5 +1,9 @@
 extends layout/layout.pug
 
+block head
+    - var title = "this is the title"
+    - var description = "this is the description"
+
 block content
     div.contact-grid
         section.container
@@ -18,7 +22,7 @@ block content
                             label(for='email') Email:
                             input#email.form-control(type='email' aria-describedby='email' placeholder='')
                         div.form-group.animate.slide-right.delay-12
-                            label(for='phone') Teléfono:
+                            label(for='phone') Tel&eacute;fono:
                             input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
                         div.form-group.animate.slide-right.delay-16
                             label(for='brand') Observaciones:

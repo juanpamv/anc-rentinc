@@ -1,5 +1,9 @@
 extends layout/layout.pug
 
+block head
+    - var title = "this is the title"
+    - var description = "this is the description"
+
 block content
     div.contact-grid
         section.container
@@ -15,13 +19,13 @@ block content
                             label(for='company') Empresa:
                             input#company.form-control(type='text' aria-describedby='company' placeholder='')
                         div.form-group.animate.slide-right.delay-08
-                            label(for='job') Profesión:
+                            label(for='job') Profesi&oacute;n:
                             input#job.form-control(type='text' aria-describedby='job' placeholder='')
                         div.form-group.animate.slide-right.delay-12
                             label(for='email') Email:
                             input#email.form-control(type='email' aria-describedby='email' placeholder='')
                         div.form-group.animate.slide-right.delay-16
-                            label(for='phone') Teléfono:
+                            label(for='phone') Tel&eacute;fono:
                             input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
                         div.form-group.animate.slide-right.delay-2
                             label(for='time') Plazo:

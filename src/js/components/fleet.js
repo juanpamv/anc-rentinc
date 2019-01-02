@@ -19,7 +19,6 @@ var fleet = (function() {
     /* =================== Public methods ================= */
 
     function windowOnScroll(){
-        console.log("Hello");
         scrollPosition($('.animate'));
     }
     

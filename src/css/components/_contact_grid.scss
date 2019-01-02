@@ -2,7 +2,7 @@
     padding: 200px 0;
 
     @include media-breakpoint-up(md) {
-        background-image: url("/dist/img/home/gray-bg.svg");
+        background-image: url(#{$imgPath}/home/gray-bg.svg);
         background-position: left top;
         background-size: 40% 100%;
         background-repeat: no-repeat;

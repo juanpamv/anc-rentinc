@@ -1,5 +1,9 @@
 extends layout/layout.pug
 
+block head
+    - var title = "this is the title"
+    - var description = "this is the description"
+
 block page
     - var page = "fleet";
 
@@ -11,7 +15,7 @@ block content
                     h1.text-uppercase Flotilla
                     p
                         strong Cuota fija todo el periodo de contrato.
-                    a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aquí
+                    a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aqu&iacute;
                 div.col-md-6.col-lg-6.hero-image
                 span.scroll-next
                     img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
@@ -123,7 +127,7 @@ block content
                                 .wrapper.h-100.position-relative.mx-auto
                                     .horizontal.position-absolute
                                     .vertical.position-absolute
-                            span.toggle-accordion.mt-3.d-block Ver más
+                            span.toggle-accordion.mt-3.d-block Ver m&aacute;s
                         
     section.profesional-container.suvs.pt-3
         div.container
@@ -202,7 +206,7 @@ block content
                             .wrapper.h-100.position-relative.mx-auto
                                 .horizontal.position-absolute
                                 .vertical.position-absolute
-                        span.toggle-accordion.mt-3.d-block Ver más
+                        span.toggle-accordion.mt-3.d-block Ver m&aacute;s
     section.business-container.position-relative
         div.container
             .row
@@ -304,4 +308,4 @@ block content
                             .wrapper.h-100.position-relative.mx-auto
                                 .horizontal.position-absolute
                                 .vertical.position-absolute
-                        span.toggle-accordion.mt-3.d-block Ver más
+                        span.toggle-accordion.mt-3.d-block Ver m&aacute;s

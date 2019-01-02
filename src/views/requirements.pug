@@ -1,5 +1,9 @@
 extends layout/layout.pug
 
+block head
+    - var title = "this is the title"
+    - var description = "this is the description"
+
 block content
     div.hero
         div.container
@@ -7,8 +11,8 @@ block content
                 div.info-wrapper.position-absolute.col-md-6.col-lg-5.offset-lg-1
                     h1.text-uppercase requisitos
                     p
-                        strong De manera ágil y accesible, las personas físicas o jurídicas pueden optar por el Renting:
-                    a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aquí
+                        strong De manera &aacute;gil y accesible, las personas f&iacute;sicas o jur&iacute;dicas pueden optar por el Renting:
+                    a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aqu&iacute;
                 div.col-md-6.col-lg-6.hero-image
                 span.scroll-next
                     img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
@@ -16,7 +20,7 @@ block content
         div.container.position-relative
             div.row
                 div.col.text-center
-                    h2.text-uppercase Personas Físicas
+                    h2.text-uppercase Personas F&iacute;sicas
             div.row
                 div.col-md-6.bg-container.position-absolute
             div.row
@@ -25,21 +29,21 @@ block content
                         img.align-self-center.mr-3(src='img/requirements/01.png' srcset="img/requirements/01.png 1x, img/requirements/01@2x.png 2x, img/requirements/01@3x.png 3x" alt='01')
                         .media-body
                             p.mb-0
-                            | Copia de la cédula de identidad del arrendatario.
+                            | Copia de la c&eacute;dula de identidad del arrendatario.
             div.row
                 div.col-md-6.col-lg-4.offset-md-6.offset-lg-7.animate(data-animations="slide-right")
                     div.media.plan.mb-4.mb-md-0.mt-md-0
                         img.align-self-center.mr-3(src='img/requirements/02.png' srcset="img/requirements/02.png 1x, img/requirements/02@2x.png 2x, img/requirements/02@3x.png 3x" alt='02')
                         .media-body
                             p.mb-0
-                            | Constancia salarial o certificación de ingresos.
+                            | Constancia salarial o certificaci&oacute;n de ingresos.
             div.row
                 div.col-md-6.col-lg-4.offset-lg-1.animate(data-animations="slide-right")
                     div.media.plan.mb-4.mb-md-0.mt-md-0
                         img.align-self-center.mr-3(src='img/requirements/03.png' srcset="img/requirements/03.png 1x, img/requirements/03@2x.png 2x, img/requirements/03@3x.png 3x" alt='03')
                         .media-body
                             p.mb-0
-                            | Orden patronal si es asalariado o estados de cuentas bancarias y tarjetas de crédito de los últimos 3 meses si es trabajador independiente.
+                            | Orden patronal si es asalariado o estados de cuentas bancarias y tarjetas de cr&eacute;dito de los &uacute;ltimos 3 meses si es trabajador independiente.
             div.row
                 div.col-md-6.col-lg-4.offset-md-6.offset-lg-7.animate(data-animations="slide-right")
                     div.media.plan.mb-4.mb-md-0.mt-md-0
@@ -53,26 +57,26 @@ block content
                         img.align-self-center.mr-3(src='img/requirements/05.png' srcset="img/requirements/05.png 1x, img/requirements/05@2x.png 2x, img/requirements/05@3x.png 3x" alt='05')
                         .media-body
                             p.mb-0
-                            | Recibo de servicio público o privado donde indique la dirección física de la persona.
+                            | Recibo de servicio p&uacute;blico o privado donde indique la direcci&oacute;n f&iacute;sica de la persona.
 
     section.legal-person.position-relative.mb-0
         div.col-md-6.position-absolute.bg-container.h-100
         div.container
             div.row
                 div.col-md-6.col-lg-5.offset-lg-1
-                    h2.text-uppercase.mb-0 Personas Jurídicas
+                    h2.text-uppercase.mb-0 Personas Jur&iacute;dicas
                 div.col-md-4.offset-md-1
                     div.media.plan.flex-column.media-one.animate(data-animations="slide-right")
                                 img.align-self-center.mb-4(src='img/requirements/legal/01.png' srcset="img/requirements/legal/01.png 1x, img/requirements/legal/01@2x.png 2x, img/requirements/legal/01@3x.png 3x" alt='01')
                                 .media-body
                                     p.mb-0
-                                    | Personería jurídica con no más de un mes de emitida.
+                                    | Personer&iacute;a jur&iacute;dica con no m&aacute;s de un mes de emitida.
                             
                     div.media.plan.mb-5.mb-md-0.mt-md-0.flex-column.animate(data-animations="slide-right")
                                 img.align-self-center.mb-4(src='img/requirements/legal/legal/02.png' srcset="img/requirements/legal/02.png 1x, img/requirements/legal/02@2x.png 2x, img/requirements/legal/02@3x.png 3x" alt='02')
                                 .media-body
                                     p.mb-0
-                                    | Copia de la cédula jurídica.
+                                    | Copia de la c&eacute;dula jur&iacute;dica.
     section.legal-person.mt-0
         div.container
             div.row
@@ -81,7 +85,7 @@ block content
                                 img.align-self-center.mr-md-3.mb-4.mb-md-0(src='img/requirements/legal/03.png' srcset="img/requirements/legal/03.png 1x, img/requirements/legal/03@2x.png 2x, img/requirements/legal/03@3x.png 3x" alt='03')
                                 .media-body.align-self-md-center
                                     p.mb-0
-                                    | Copia del documento de identificación del representante legal de la empresa.
+                                    | Copia del documento de identificaci&oacute;n del representante legal de la empresa.
             div.row
                 div.col-md-6.col-xl-4.offset-md-4.offset-lg-6.mb-5
                     div.media.plan.flex-column.flex-md-row.animate(data-animations="slide-right")
@@ -95,12 +99,12 @@ block content
                                 img.align-self-center.mr-md-3.mb-4.mb-md-0(src='img/requirements/legal/legal/05.png' srcset="img/requirements/legal/05.png 1x, img/requirements/legal/05@2x.png 2x, img/requirements/legal/05@3x.png 3x" alt='05')
                                 .media-body.align-self-md-center
                                     p.mb-0
-                                    | Declaraciones de renta de los dos últimos períodos fiscales.  
+                                    | Declaraciones de renta de los dos &uacute;ltimos per&iacute;odos fiscales.  
             div.row
                 div.col-md-6.col-xl-4.offset-md-4.offset-lg-6.mb-5
                     div.media.plan.flex-column.flex-md-row.animate(data-animations="slide-right")
                                 img.align-self-center.mr-md-3.mb-4.mb-md-0(src='img/requirements/legal/legal/06.png' srcset="img/requirements/legal/06.png 1x, img/requirements/legal/06@2x.png 2x, img/requirements/legal/06@3x.png 3x" alt='06')
                                 .media-body.align-self-md-center
                                     p.mb-0
-                                    | Recibo de servicio público o privado donde indique la dirección física de la empresa.               
+                                    | Recibo de servicio p&uacute;blico o privado donde indique la direcci&oacute;n f&iacute;sica de la empresa.               
             

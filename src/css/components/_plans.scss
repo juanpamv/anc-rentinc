@@ -3,7 +3,7 @@
     margin-bottom: 100px;
 
     @include media-breakpoint-up(md){
-        background-image: url("/dist/img/home/gray-bg.svg");
+        background-image: url(#{$imgPath}/home/gray-bg.svg);
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: 50% 65%;

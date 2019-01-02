@@ -21,6 +21,7 @@ var home = (function() {
     function windowOnScroll(){
         console.log("Hello");
         scrollPosition($('.animate'));
+        console.log("Hello");
     }
     
     

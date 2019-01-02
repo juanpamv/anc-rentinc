@@ -13,7 +13,7 @@
     }
     
     .hero-image{
-        background: url("/dist/img/fleet/vehiculo-carga@3x.jpg") no-repeat;
+        background: url(#{$imgPath}/fleet/vehiculo-carga@3x.jpg) no-repeat;
         background-size: cover;
         background-position: top;
         right: 0;
