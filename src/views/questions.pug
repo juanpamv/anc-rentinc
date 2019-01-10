@@ -1,5 +1,9 @@
 extends layout/layout.pug
 
+block head
+    - var title = "Renting | Preguntas frecuentes"
+    - var description = "this is the description"
+
 block page
     - var page = "fleet";
 
@@ -11,7 +15,7 @@ block content
                     h1.text-uppercase Preguntas Frecuentes
                     p
                         strong De manera ágil y accesible, las personas físicas o jurídicas pueden optar por el Renting:
-                    a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aquí
+                    a.btn.text-center.text-uppercase.border-0.rounded-0(href='quote.html') Cotice aquí
                 div.col-md-12.hero-image
                 span.scroll-next
                     img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
@@ -138,6 +142,7 @@ block content
                                             li Orden patronal si es asalariado o estados de cuenta bancarios y tarjetas de crédito de los últimos 3 meses.
                                             li Currículum vitae o perfil del solicitante.
                                             li Recibo de servicio público o privado donde indique la dirección física de la persona.
+                                        br
                                         p
                                             strong Persona jur&iacute;dica:
                                         ul

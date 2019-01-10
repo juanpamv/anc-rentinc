@@ -10,8 +10,13 @@
 }
 
 .hero{
+	background-image: url(#{$imgPath}/tucson-header@3x.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 60vh;
 	position: relative;
+
 	@include media-breakpoint-up(md) {
 		height: 100vh;
 	}

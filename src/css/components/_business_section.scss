@@ -29,4 +29,14 @@
             margin-top: 82px;
         }
     }
+
+    ul{
+		li{
+			.media{
+				&:not(:last-child){
+					border-right: 1px solid $dark-gray;
+				}
+			}
+		}
+	}
 }

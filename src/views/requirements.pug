@@ -1,7 +1,7 @@
 extends layout/layout.pug
 
 block head
-    - var title = "this is the title"
+    - var title = "Renting | Requisitos"
     - var description = "this is the description"
 
 block content
@@ -12,8 +12,7 @@ block content
                     h1.text-uppercase requisitos
                     p
                         strong De manera &aacute;gil y accesible, las personas f&iacute;sicas o jur&iacute;dicas pueden optar por el Renting:
-                    a.btn.text-center.text-uppercase.border-0.rounded-0 Cotice aqu&iacute;
-                div.col-md-6.col-lg-6.hero-image
+                    a.btn.text-center.text-uppercase.border-0.rounded-0(href='quote.html') Cotice aqu&iacute;
                 span.scroll-next
                     img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
     section.physical-person
