@@ -8,7 +8,7 @@ html(lang='en')
         title #{title}
         meta(name='description', content=(description || "Page description"))
     block page
-    body(data-action=(page || "home"))
+    body(data-action=(page || "home") class=(page || "home"))
         // Start: Header
         include ../partials/header.pug
         // End: Header
