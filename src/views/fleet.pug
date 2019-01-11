@@ -18,11 +18,16 @@ block content
                     a.btn.text-center.text-uppercase.border-0.rounded-0(href='quote.html') Cotice aqu&iacute;
                 span.scroll-next
                     img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
-    section.profesional-container.gray-container
+    section.profesional-container.gray-container.position-relative
         div.container
                 div.row
-                    div.col-lg-11.offset-lg-1
-                        h2.text-uppercase profesional     
+                    div.col-md-6.col-lg-5.offset-lg-1
+                            h2.text-uppercase profesional
+                    div.d-none.d-md-block.col-md-12.col-lg-6.hero-image.mb-md-5.mb-lg-0
+                        .screen.animate(data-animations="show-image")
+
+                div.row
+                    div.col-lg-11.offset-lg-1  
                         h5.mb-4 Sedanes                   
                         .row
                             .col-xl-9
