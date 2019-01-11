@@ -80,6 +80,10 @@ p {
 a {
     $anchorLinkColor: $light-green !default;
     color: $anchorLinkColor;
+
+    &:hover, &:active {
+        color: $anchorLinkColor;
+    }
 }
 
 input, textarea, select, .form-control{

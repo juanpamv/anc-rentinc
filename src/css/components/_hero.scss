@@ -45,6 +45,7 @@
 
 		@include media-breakpoint-down(sm){
 			@include full-width-hero-bg;
+			align-items: baseline;
 		}
 
 		&.full-width{
