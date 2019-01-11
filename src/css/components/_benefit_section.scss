@@ -1,12 +1,6 @@
 .benefit-container{
 	@include componentPadding;
-	
-
 	padding-bottom: 150px;
-
-	@include media-breakpoint-up(md){
-		padding-bottom: 430px;
-	}
 	
 	ul{
 		@include media-breakpoint-up(lg){
