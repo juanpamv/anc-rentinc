@@ -27,5 +27,17 @@
     .img-block{
         overflow: hidden;
         position: relative;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    a{
+        color: $black;
+
+        &:hover, &:active {
+            color: $light-green;
+        }
     }
 }
