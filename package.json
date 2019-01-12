@@ -30,7 +30,8 @@
 	},
 	"dependencies": {
 		"autoprefixer": "^8.4.1",
-		"concurrently": "^4.1.0"
+		"concurrently": "^4.1.0",
+		"rellax": "^1.7.2"
 	},
 	"browserslist": [
 		"> 0%"

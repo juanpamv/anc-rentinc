@@ -28,6 +28,7 @@ var componentExample = (function() {
     // cache DOM elements
     function cacheDom() {
         DOM.$someElement = $("#some-element");
+        console.log("hola");
     }
 
     function handleClick() {}
@@ -39,7 +40,6 @@ var componentExample = (function() {
 
     // Component Init
     function init() {
-        console.log("Hello from example");
         cacheDom();
         bindEvents();
     }
