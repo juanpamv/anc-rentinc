@@ -8,7 +8,7 @@
 
 import { scrollPosition } from "../helpers/utils";
 
-var home = (function() {
+var quote = (function() {
     "use strict";
 
     // Variable Definitions - Public Variables
@@ -28,7 +28,6 @@ var home = (function() {
     function cacheDom() {
         DOM.animatedItems = $('.animate');
         DOM.window = $(window);
-        console.log("hello");
     }
  
     // Bind Events To UI
@@ -48,4 +47,4 @@ var home = (function() {
     };
 })();
 
-export { home };
+export { quote };

@@ -12,13 +12,13 @@
         }
     }
     .bg-container{
-        background: $gray;
-        height: 90%;
-        left: 50%;
-        top: 15%;
-        transform: translateX(-50%);
+
         @include media-breakpoint-up(md){
+            background: $gray;
+            height: 90%;
+            left: 50%;
             top: 135px;
+            transform: translateX(-50%);
         }
     }
 }

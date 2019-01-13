@@ -38,5 +38,8 @@
         
 
 // Page-specific stylesheets
-@import "pages/fleet";
-@import "pages/requierements";
+@import "pages/fleet",
+        "pages/requierements",
+        "pages/quote",
+        "pages/contact",
+        "pages/questions";

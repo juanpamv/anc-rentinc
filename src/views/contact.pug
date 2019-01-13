@@ -1,5 +1,8 @@
 extends layout/layout.pug
 
+block page
+    - var page = "contact";
+
 block head
     - var title = "Renting | Cotizar"
     - var description = "this is the description"
@@ -10,21 +13,22 @@ block content
             div.row
                 div.col-md-5.col-lg-5.offset-lg-1
                     h1.text-uppercase Contacto
-                div.col-md-5.offset-md-1.col-lg-4.offset-lg-1
+                div.col-md-5.offset-md-1.col-lg-4.offset-lg-1.animate.slide-right
+                    p ¡Cont&aacute;ctenos! Le cotizamos el carro nuevo que usted y su negocio necesitan.
                     form(action="")
-                        div.form-group.animate.slide-right
+                        div.form-group
                             label(for='name') Nombre:
                             input#name.form-control(type='text' aria-describedby='name' placeholder='')
-                        div.form-group.animate.slide-right.delay-04
+                        div.form-group
                             label(for='company') Empresa:
                             input#company.form-control(type='text' aria-describedby='company' placeholder='')
-                        div.form-group.animate.slide-right.delay-08
+                        div.form-group
                             label(for='email') Email:
                             input#email.form-control(type='email' aria-describedby='email' placeholder='')
-                        div.form-group.animate.slide-right.delay-12
+                        div.form-group
                             label(for='phone') Tel&eacute;fono:
                             input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
-                        div.form-group.animate.slide-right.delay-16
+                        div.form-group
                             label(for='brand') Observaciones:
                             <textarea class="form-control" id="brand" rows="3"></textarea>
                         <button type="submit" class="btn btn-primary cancel">Cancelar</button>
