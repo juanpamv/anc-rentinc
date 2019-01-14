@@ -43,15 +43,16 @@
 	}
 
 	.info-wrapper{
-		top: 50%;
-		transform: translateY(-50%);
 
 		@include media-breakpoint-down(sm){
 			@include full-width-hero-bg;
+			background-color: transparent;
 			align-items: baseline;
 		}
 
 		@include media-breakpoint-up(md){
+			top: 50%;
+			transform: translateY(-50%);
 			left: 0;
 			position: absolute;
 		}
