@@ -1,46 +1,31 @@
-.contact-grid{
-    padding: 200px 0;
-
-    @include media-breakpoint-up(md) {
-        background-image: url(#{$imgPath}/home/gray-bg.svg);
-        background-position: left top;
-        background-size: 40% 100%;
-        background-repeat: no-repeat;
-    }
-
-    @include media-breakpoint-up(lg) {
-        background-size: 50% 100%;
-    }
-
-
-    h1{
+.contact-grid {
+    padding: 10px;
+    margin-top: 80px;
+    background-image: url(#{$imgPath}/home/gray-bg.svg);
+    background-size: cover;
+    h1 {
         color: $black;
-
-        &::after{
+        &::after {
             background-color: $light-green;
             content: '';
             display: block;
             height: 5px;
             margin-bottom: 50px;
             width: 100px;
-    
             @include media-breakpoint-up(md) {
                 margin-bottom: 90px;
             }
         }
     }
-
-    img{
+    img {
         padding: 20px;
         max-width: 300px;
     }
-
-    .left-column{
+    .left-column {
         background-color: $white;
         padding: 10px;
     }
-
-    .btn{
+    .btn {
         background-color: $green;
         border-radius: 0;
         border: none;
@@ -49,11 +34,10 @@
         appearance: none;
         &:hover,
         &:active,
-        &:focus{
+        &:focus {
             color: $light-green;
         }
-
-        &.cancel{
+        &.cancel {
             background-color: $light-green;
         }
     }

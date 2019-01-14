@@ -8,324 +8,64 @@ block page
     - var page = "fleet";
 
 block content
-    div.hero
+    div.hero.pb-5
         div.container
             div.row
-                div.info-wrapper.position-absolute.col-md-6.col-lg-5.offset-lg-1
+                div.info-wrapper.col-md-6.col-lg-5.offset-lg-1
                     h1.text-uppercase Servicio de Carro Sustituto
                     p
                         strong Enterprise Rent-A-Car es líder en servicio de carro sustituto y renta de vehículos. El servicio de CARRO SUSTITUTO está dirigido a personas quienes tengan alguna situación que les impida utilizar su carro propio.
-                span.scroll-next
-                    img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
-    section.profesional-container.gray-container.position-relative
+                div.col-md-5.col-lg-5.contact-grid.offset-md-1
+                    form(action="")
+                        div.form-group
+                            label(for='name') Nombre *
+                            input#name.form-control(type='text' aria-describedby='name' placeholder='')
+                        div.form-group
+                            label(for='lastName') Apellidos *
+                            input#company.form-control(type='text' aria-describedby='lastName' placeholder='')
+                        div.form-group
+                            label(for='email') Email *
+                            input#email.form-control(type='email' aria-describedby='email' placeholder='')
+                        div.form-group
+                            label(for='phone') Tel&eacute;fono *
+                            input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
+                        div.form-group
+                            label(for='brand') Mensaje *
+                            <textarea class="form-control" id="brand" rows="3"></textarea>
+                        <button type="submit" class="btn btn-primary cancel">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>        
+                
+    section.gray-container.homepage-container
         div.container
                 div.row
-                    div.col-md-6.col-lg-5.offset-lg-1
-                        h2.text-uppercase Sedanes
+                    .how-to-rent.col-md-10.offset-md-1.mb-5
+                        h3 ¿Cuando puede rentar un carro sustituto?
+                        ul
+                            li Choque
+                            li Carro en el taller (reparación, mantenimiento, revisión de kilómetros)
+                            li Compra de vehículo (espera por le entreguen el carro)
+
                 div.row
-                    div.col-lg-11.offset-lg-1  
-                        h5.mb-4                  
-                        .row
-                            .col-xl-12
-                                #sedanCollapse1.collapse.multi-collapse.show
-                                    .card.card-body
-                                        ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
-                                            li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
-                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
-                                                h5.mb-3 Toyota Yaris
-                                                ul.list-unstyled.d-flex.mb-3
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                        .media-body.text-left 5
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                        .media-body.text-left 5
-                                                    li.media
-                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                        .media-body.text-left.text-nowrap 1.5 lts
-                                                span.text-center 4 puertas
-                                            li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
-                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan2.png' srcset="img/fleet/sedan2.png 1x, img/fleet/sedan2@2x.png 2x, img/fleet/sedan2@3x.png 3x" alt='alquiler de sedanes')
-                                                h5.mb-3 Toyota Yaris
-                                                ul.list-unstyled.d-flex.mb-3
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                        .media-body.text-left 5
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                        .media-body.text-left 5
-                                                    li.media
-                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                        .media-body.text-left.text-nowrap 1.5 lts
-                                                span.text-center 4 puertas
-                                            li.text-center.mx-auto.animate.delay-08(data-animations="slide-right")
-                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan3.png' srcset="img/fleet/sedan3.png 1x, img/fleet/sedan3@2x.png 2x, img/fleet/sedan3@3x.png 3x" alt='alquiler de sedanes')
-                                                h5.mb-3 Toyota Yaris
-                                                ul.list-unstyled.d-flex.mb-3
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                        .media-body.text-left 5
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                        .media-body.text-left 5
-                                                    li.media
-                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                        .media-body.text-left.text-nowrap 1.5 lts
-                                                span.text-center 4 puertas
-                            
-                        .row
-                            .col-xl-12
-                                #sedanCollapse2.collapse.multi-collapse
-                                    .card.card-body
-                                        ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
-                                            li.text-center.mx-auto.mb-5.mb-md-0
-                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
-                                                h5.mb-3 Toyota Yaris
-                                                ul.list-unstyled.d-flex.mb-3
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                        .media-body.text-left 5
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                        .media-body.text-left 5
-                                                    li.media
-                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                        .media-body.text-left.text-nowrap 1.5 lts
-                                                span.text-center 4 puertas
-                                            li.text-center.mx-auto.mb-5.mb-md-0
-                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan2.png' srcset="img/fleet/sedan2.png 1x, img/fleet/sedan2@2x.png 2x, img/fleet/sedan2@3x.png 3x" alt='alquiler de sedanes')
-                                                h5.mb-3 Toyota Yaris
-                                                ul.list-unstyled.d-flex.mb-3
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                        .media-body.text-left 5
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                        .media-body.text-left 5
-                                                    li.media
-                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                        .media-body.text-left.text-nowrap 1.5 lts
-                                                span.text-center 4 puertas
-                                            li.text-center.mx-auto
-                                                img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan3.png' srcset="img/fleet/sedan3.png 1x, img/fleet/sedan3@2x.png 2x, img/fleet/sedan3@3x.png 3x" alt='alquiler de sedanes')
-                                                h5.mb-3 Toyota Yaris
-                                                ul.list-unstyled.d-flex.mb-3
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                        .media-body.text-left 5
-                                                    li.media.pr-2.mr-2
-                                                        img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                        .media-body.text-left 5
-                                                    li.media
-                                                        img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                        .media-body.text-left.text-nowrap 1.5 lts
-                                                span.text-center 4 puertas
-                .row
-                    .col
-                        div.accordion-container.text-center(data-action='accordion' data-toggle='collapse' data-target='#sedanCollapse2' aria-expanded='false' aria-controls='suvCollapse2')
-                            .plus-minus-container.mx-auto
-                                .wrapper.h-100.position-relative.mx-auto
-                                    .horizontal.position-absolute
-                                    .vertical.position-absolute
-                            span.toggle-accordion.mt-3.d-block Ver m&aacute;s
-                        
-    section.profesional-container.suvs
-        div.container
-            div.row
-                div.col-md-6.col-lg-5.offset-lg-1
-                    h2.text-uppercase SUVS
-            .row
-                div.col-lg-11.offset-lg-1.cargo-container
-                    h5.mb-4 
-                    #cargoCollapse1.collapse.multi-collapse.show
-                        .card.card-body
-                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-column.flex-md-row
-                                li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-08(data-animations="slide-right")
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                    #cargoCollapse2.collapse.multi-collapse
-                        .card.card-body
-                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
-                                li.text-center.mx-auto.mb-5.mb-md-0
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts   
-            .row
-                div.col
-                    div.accordion-container.text-center.mb-5(data-action='accordion' data-toggle='collapse' data-target='#cargoCollapse2' aria-expanded='false' aria-controls='cargoCollapse2')
-                        .plus-minus-container.mx-auto
-                            .wrapper.h-100.position-relative.mx-auto
-                                .horizontal.position-absolute
-                                .vertical.position-absolute
-                        span.toggle-accordion.mt-3.d-block Ver m&aacute;s
-    section.business-container.position-relative
-        div.container
-            .row
-                div.col-md-6.col-lg-5.offset-lg-1
-                    h2.text-uppercase Carga Liviana
-            .row
-                div.col-lg-11.offset-lg-1.cargo-container
-                    h5.mb-4 
-                    #cargoCollapse1.collapse.multi-collapse.show
-                        .card.card-body
-                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-column.flex-md-row
-                                li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-08(data-animations="slide-right")
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                    #cargoCollapse2.collapse.multi-collapse
-                        .card.card-body
-                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
-                                li.text-center.mx-auto.mb-5.mb-md-0
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-center.mx-auto.mb-5.mb-md-0
-                                    img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts   
-            .row
-                div.col
-                    div.accordion-container.text-center.mb-5(data-action='accordion' data-toggle='collapse' data-target='#cargoCollapse2' aria-expanded='false' aria-controls='cargoCollapse2')
-                        .plus-minus-container.mx-auto
-                            .wrapper.h-100.position-relative.mx-auto
-                                .horizontal.position-absolute
-                                .vertical.position-absolute
-                        span.toggle-accordion.mt-3.d-block Ver m&aacute;s
+                    .benefits.col-md-10.offset-md-1.mb-5
+                        h3 Beneficios para el cliente:
+                        ul
+                            li Tarifa permanente durante todo el año.
+                            li Flota disponible todo el año.
+                            li Depósito de garantía reducido.
+                            li Le llevamos el carro o lo recogemos.
+                            li Tarifa especial en talleres afiliados.
+                            li No hay límite de días, puede rentar desde un día en adelante cualquier día del año.
+                            li Tenemos cobertura en todo el país.
+                            li Libre kilometraje.
+                            li Flota nueva (máximo carros con 2 años).
+                            li Servicio telefónico de emergencias 24 horas.
+
+                div.row
+                    .req.col-md-10.offset-md-1
+                        h3 Requisitos para aplicar la tarifa:
+                        ul.mb-4
+                            li Choque: Presentar aviso de tránsito u orden de trabajo del taller.
+                            li Carro en el taller: Presentar orden del taller.
+                            li Compra de vehículo: Orden de agencia.
+
+                        p.disclaimer *En caso de NO presentar los documentos requeridos, NO aplica la tarifa de carro sustituto en ninguno de los casos. Si el cliente cuenta con la cobertura con alguna aseguradora puede tramitarlo por medio de esta o puede solicitar el reembolso con la factura que le otorgamos.            

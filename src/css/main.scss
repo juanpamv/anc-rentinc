@@ -1,41 +1,27 @@
 ﻿@charset "UTF-8";
-
 // Sass utilities
 @import "helpers/functions",
-        "helpers/mixins",
-        "helpers/overrides",
-        "helpers/variables",
-        "helpers/animations";
-
+"helpers/mixins",
+"helpers/overrides",
+"helpers/variables",
+"helpers/animations";
 // Vendors and external stylesheets
 @import "vendors/bootstrap4/bootstrap";
-
 // Base stuff
 @import "base/reset",
-        "base/typography";
-
+"base/typography";
 // Layout related stylesheets
 @import "layout/footer",
-        "layout/grid",
-        "layout/header",
-        "layout/menu",
-        "layout/page",
-        "layout/sidebar";
-
+"layout/grid",
+"layout/header",
+"layout/menu",
+"layout/page",
+"layout/sidebar";
 // Components and modules
 //@import "components/example";
-@import "components/benefit_section",
-        "components/hero",
-        "components/plans",
-        "components/fleets",
-        "components/professional_section",
-        "components/business_section",
-        "components/physical_person_section",
-        "components/common",
-        "components/internal_hero",
-        "components/questions_section",
-        "components/contact_grid";
-        
-
+@import "components/hero",
+"components/common",
+"components/homepage",
+"components/contact_grid";
 // Page-specific stylesheets
 @import "pages/fleet";

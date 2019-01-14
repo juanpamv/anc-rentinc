@@ -1,90 +1,36 @@
-@mixin full-width-hero-bg{
-	background: rgba(255,255,255,0.6);
-	z-index: 1;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	left: 0;
+@mixin full-width-hero-bg {
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
 }
 
-.hero{
-	background-image: url(#{$imgPath}/tucson-header@3x.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 60vh;
-	position: relative;
-
-	@include media-breakpoint-up(md) {
-		height: 100vh;
-	}
-
-	.hero-image{
-		background-image: url(#{$imgPath}/tucson-header@3x.jpg);
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 60vh;
-		position: absolute;
-
-		@include media-breakpoint-up(md) {
-			height: 100vh;
-			right: 0;
+.hero {
+    background-image: url(#{$imgPath}/fleet/fleet-hero@3x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .info-wrapper {
+        transform: translateY(25%);
+        @include media-breakpoint-down(sm) {
+            @include full-width-hero-bg;
+            align-items: baseline;
         }
-
-		@include media-breakpoint-up(lg) {
-            transform: translateY(48px);
+        &.full-width {
+            @include full-width-hero-bg;
+            @include media-breakpoint-up(md) {
+                &+.hero-image {
+                    transform: translateY(0);
+                }
+            }
         }
-	}
-
-	.info-wrapper{
-		top: 50%;
-		transform: translateY(-50%);
-
-		@include media-breakpoint-down(sm){
-			@include full-width-hero-bg;
-			align-items: baseline;
-		}
-
-		&.full-width{
-			@include full-width-hero-bg;
-			@include media-breakpoint-up(md){
-				&+.hero-image{
-					transform: translateY(0);
-				}
-			}
-		}
-
-		p{
-			margin-bottom: 20px;
-		}
-
-		.btn{
-			background-color: $green;
-			color: $white;
-			padding: 9px 54px;
-			appearance: none;
-			&:hover,
-			&:active,
-			&:focus{
-				color: $light-green;
-			}
-		}
-	}
-
-	.scroll-next{
-		bottom: 10vh;
-		left: 50%;
-		position: absolute;
-		transform: translateX(-50%);
-		z-index: 10;
-
-		.arrows-down{
-			height: 51px;
-			width: 56px;
-		}
-	}
+        p {
+            margin-bottom: 20px;
+        }
+    }
 }
