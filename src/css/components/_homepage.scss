@@ -1,4 +1,9 @@
 .homepage-container {
     padding-top: 60px;
     padding-bottom: 60px;
+    h2 {
+        &::after {
+            margin-bottom: 30px;
+        }
+    }
 }

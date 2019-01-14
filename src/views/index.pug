@@ -5,7 +5,7 @@ block head
     - var description = "this is the description"
 
 block page
-    - var page = "fleet";
+    - var page = "home";
 
 block content
     div.hero.pb-5
@@ -37,17 +37,17 @@ block content
                 
     section.gray-container.homepage-container
         div.container
-                div.row
+                div.row.animate(data-animations="slide-right")
                     .how-to-rent.col-md-10.offset-md-1.mb-5
-                        h3 ¿Cuando puede rentar un carro sustituto?
+                        h2 ¿Cuando puede rentar un carro sustituto?
                         ul
                             li Choque
                             li Carro en el taller (reparación, mantenimiento, revisión de kilómetros)
                             li Compra de vehículo (espera por le entreguen el carro)
 
-                div.row
-                    .benefits.col-md-10.offset-md-1.mb-5
-                        h3 Beneficios para el cliente:
+                div.row.animate(data-animations="slide-right")
+                    .benefits.col-md-10.offset-md-1.mb-5.slide-right
+                        h2 Beneficios para el cliente:
                         ul
                             li Tarifa permanente durante todo el año.
                             li Flota disponible todo el año.
@@ -60,9 +60,9 @@ block content
                             li Flota nueva (máximo carros con 2 años).
                             li Servicio telefónico de emergencias 24 horas.
 
-                div.row
-                    .req.col-md-10.offset-md-1
-                        h3 Requisitos para aplicar la tarifa:
+                div.row.animate(data-animations="slide-right")
+                    .req.col-md-10.offset-md-1.slide-right
+                        h2 Requisitos para aplicar la tarifa:
                         ul.mb-4
                             li Choque: Presentar aviso de tránsito u orden de trabajo del taller.
                             li Carro en el taller: Presentar orden del taller.

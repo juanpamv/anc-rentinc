@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
     font-family: $font-gotham-medium;
     color: $black;
 }
@@ -7,35 +6,34 @@ body {
 // ========================= //
 //         HEADINGS          //
 // ========================= //
-h1, h2 {
+h1,
+h2 {
     @include fontSize(35px);
     font-family: $font-gotham-bold;
     font-weight: 800;
     line-height: normal;
     margin-bottom: 10px;
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(md) {
         @include fontSize(50px);
         line-height: 60px;
     }
 }
 
-h1{
+h1 {
     color: $green;
 }
 
-h2{
+h2 {
     margin-bottom: 10px;
-
-    &::after{
+    &::after {
         background-color: $light-green;
         content: '';
         display: block;
         height: 5px;
         margin-bottom: 50px;
         width: 100px;
-
         @include media-breakpoint-up(md) {
-			margin-bottom: 140px;
+            margin-bottom: 140px;
         }
     }
 }
@@ -80,12 +78,25 @@ p {
 a {
     $anchorLinkColor: $light-green !default;
     color: $anchorLinkColor;
-
-    &:hover, &:active {
+    &:hover,
+    &:active {
         color: $anchorLinkColor;
     }
 }
 
-input, textarea, select, .form-control{
+input,
+textarea,
+select,
+.form-control {
     border-radius: 0;
+}
+
+ul {
+    li {
+        @include fontSize(18px);
+    }
+}
+
+.disclaimer {
+    @include fontSize(13px);
 }
