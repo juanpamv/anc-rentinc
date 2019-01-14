@@ -11,11 +11,50 @@ block content
     div.hero
         div.container
             div.row
-                div.info-wrapper.position-absolute.col-md-6.col-lg-5.offset-lg-1
+                div.info-wrapper.col-md-6.col-lg-5.offset-lg-1
                     h1.text-uppercase Flotilla
                     p
                         strong Le ofrecemos  una gran variedad de marcas para garantizar el vehículo que necesita.
-                    a.btn.text-center.text-uppercase.border-0.rounded-0(href='quote.html') Cotice aqu&iacute;
+                div.col-md-6.col-lg-5.contact-grid
+                    form(action="")
+                        div.form-group
+                            label(for='name') Nombre:
+                            input#name.form-control(type='text' aria-describedby='name' placeholder='')
+                        div.form-group
+                            label(for='company') Empresa:
+                            input#company.form-control(type='text' aria-describedby='company' placeholder='')
+                        div.form-group
+                            label(for='job') Profesi&oacute;n:
+                            input#job.form-control(type='text' aria-describedby='job' placeholder='')
+                        div.form-group
+                            label(for='email') Email:
+                            input#email.form-control(type='email' aria-describedby='email' placeholder='')
+                        div.form-group
+                            label(for='phone') Tel&eacute;fono:
+                            input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
+                        div.form-group
+                            label(for='time') Plazo:
+                            <select class="form-control" id="time">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        div.form-group
+                            label(for='brand') Marca:
+                            <select class="form-control" id="brand">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        div.form-group
+                            label(for='brand') Observaciones:
+                            <textarea class="form-control" id="brand" rows="3"></textarea>
+                        <button type="submit" class="btn btn-primary cancel">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Cotizar</button>
                 span.scroll-next
                     img.arrows-down.d-none.d-md-block(src='img/arrows-down.svg' alt='Arrows Down')
     section.profesional-container.gray-container.position-relative

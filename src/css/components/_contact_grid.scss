@@ -1,15 +1,8 @@
 .contact-grid{
-    padding: 200px 0;
+    padding: 20px 15px;
 
     @include media-breakpoint-up(md) {
-        background-image: url(#{$imgPath}/home/gray-bg.svg);
-        background-position: left top;
-        background-size: 40% 100%;
-        background-repeat: no-repeat;
-    }
-
-    @include media-breakpoint-up(lg) {
-        background-size: 50% 100%;
+        background-color: $gray;
     }
 
 

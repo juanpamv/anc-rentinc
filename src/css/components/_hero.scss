@@ -15,11 +15,13 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 60vh;
+	height: auto;
 	position: relative;
+	padding-top: 100px;
+	padding-bottom: 50px;
 
-	@include media-breakpoint-up(md) {
-		height: 100vh;
+	.row{
+		justify-content: flex-end;
 	}
 
 	.hero-image{
@@ -47,6 +49,11 @@
 		@include media-breakpoint-down(sm){
 			@include full-width-hero-bg;
 			align-items: baseline;
+		}
+
+		@include media-breakpoint-up(md){
+			left: 0;
+			position: absolute;
 		}
 
 		&.full-width{
