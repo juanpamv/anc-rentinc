@@ -33,7 +33,6 @@ var home = (function() {
     // Bind Events To UI
     function bindEvents() {
         DOM.window.on('scroll', windowOnScroll)
-        console.log("hello");
     }
 
     // Component Init

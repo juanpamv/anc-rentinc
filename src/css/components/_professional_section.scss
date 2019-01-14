@@ -1,6 +1,6 @@
 .profesional-container{
-	@include componentPadding;
-	padding-bottom: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	@include media-breakpoint-up(md){
         min-height: 302px;
@@ -33,6 +33,9 @@
 		}
 	}
 	&.suvs{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		
 		.img-container{
 			margin-top: -70px;
 			overflow: hidden;

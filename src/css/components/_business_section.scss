@@ -1,4 +1,6 @@
 .business-container{
+    padding-bottom: 50px;
+    
     @include media-breakpoint-up(md){
         min-height: 302px;
     }
