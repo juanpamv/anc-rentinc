@@ -1,8 +1,5 @@
 .business-container{
     @include media-breakpoint-up(md){
-        .row:first-child{
-            min-height: 302px;
-        }
         min-height: 302px;
     }
 

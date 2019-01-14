@@ -21,26 +21,6 @@ var htmlConfig = {
 		new HtmlWebpackPlugin({
 			template: './src/views/index.pug'
 		}),
-		new HtmlWebpackPlugin({
-			filename: 'fleet.html',
-			template: './src/views/fleet.pug'
-		}),
-		new HtmlWebpackPlugin({
-			filename: 'contact.html',
-			template: './src/views/contact.pug'
-		}),
-		new HtmlWebpackPlugin({
-			filename: 'requirements.html',
-			template: './src/views/requirements.pug'
-		}),
-		new HtmlWebpackPlugin({
-			filename: 'questions.html',
-			template: './src/views/questions.pug'
-		}),
-		new HtmlWebpackPlugin({
-			filename: 'quote.html',
-			template: './src/views/quote.pug'
-		}),
 	],
 	module: {
 		rules: [
