@@ -28,7 +28,6 @@ var home = (function() {
     function cacheDom() {
         DOM.animatedItems = $('.animate');
         DOM.window = $(window);
-        console.log("hello");
     }
  
     // Bind Events To UI
