@@ -25,9 +25,19 @@
             width: 100px;
     
             @include media-breakpoint-up(md) {
-                margin-bottom: 140px;
+                margin-bottom: 90px;
             }
         }
+    }
+
+    img{
+        background-color: $white;
+        padding: 20px;
+    }
+
+    .left-column{
+        background-color: $white;
+        padding: 10px;
     }
 
     .btn{
@@ -35,7 +45,7 @@
         border-radius: 0;
         border: none;
         color: $white;
-        padding: 9px 54px;
+        padding: 9px 40px;
         appearance: none;
         &:hover,
         &:active,
