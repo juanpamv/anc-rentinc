@@ -31,11 +31,11 @@ h2{
         content: '';
         display: block;
         height: 5px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         width: 100px;
 
         @include media-breakpoint-up(md) {
-			margin-bottom: 140px;
+			margin-bottom: 30px;
         }
     }
 }

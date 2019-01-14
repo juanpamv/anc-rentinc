@@ -7,7 +7,7 @@
 
     h2{
         &::after{
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
     }
     
@@ -21,11 +21,6 @@
         overflow: hidden;
         @include media-breakpoint-up(lg){
             position: absolute;
-        }
-    }
-    .cargo-container{
-        @include media-breakpoint-up(lg){
-            margin-top: 82px;
         }
     }
 
