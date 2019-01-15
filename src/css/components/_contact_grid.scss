@@ -23,6 +23,14 @@
         }
     }
 
+    .form-control{
+        @include media-breakpoint-up(md) {
+            display: inline-block;
+            width: 70%;
+            float: right;
+        }
+    }
+
     img{
         padding: 20px;
         max-width: 300px;
@@ -31,6 +39,12 @@
     .left-column{
         background-color: $white;
         padding: 10px;
+    }
+
+    .last-box{
+        @include media-breakpoint-up(md) {     
+            height: 85px;
+        }
     }
 
     .btn{

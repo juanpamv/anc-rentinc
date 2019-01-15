@@ -51,8 +51,6 @@
 		}
 
 		@include media-breakpoint-up(md){
-			top: 50%;
-			transform: translateY(-50%);
 			left: 0;
 			position: absolute;
 		}
