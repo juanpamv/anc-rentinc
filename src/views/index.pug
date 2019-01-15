@@ -55,7 +55,7 @@ block content
                                 | Cuota fija todo
                                 br
                                 | el periodo
-                        li.text-center.mb-0.animate.delay-04(data-animations="slide-right")
+                        li.text-center.mb-5.animate.delay-04(data-animations="slide-right")
                             img.d-block.mx-auto(src='img/gasto-impuestos.svg' alt='Clock')
                             h4 
                                 | 100% se registra 
@@ -81,17 +81,17 @@ block content
             div.row
                 div.col-lg-10.offset-lg-1
                     div.row
-                        div.col
+                        div.col.col-12.col-md
                             div.img-block
                                 .screen.animate(data-animations="show-image")
                                 img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/empresarial.jpg' srcset="img/home/empresarial.jpg 1x, img/home/empresarial@2x.jpg 2x, img/home/empresarial@3x.jpg 3x" alt='alquiler de vehiculos')                            
                             h4  Profesional independiente
-                        div.col
+                        div.col.col-12.col-md
                             div.img-block
                                 .screen.animate(data-animations="show-image")
                                 img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/profesional-independiente.jpg' srcset="img/home/profesional-independiente.jpg 1x, img/home/profesional-independiente@2x.jpg 2x, img/home/profesional-independiente@3x.jpg 3x" alt='alquiler de vehiculos')
                             h4  Empresas
-                        div.col
+                        div.col.col-12.col-md
                             div.img-block
                                 .screen.animate(data-animations="show-image")
                                 img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/negocios.jpg' srcset="img/home/negocios.jpg 1x, img/home/negocios@2x.jpg 2x, img/home/negocios@3x.jpg 3x" alt='alquiler de vehiculos')
@@ -99,26 +99,60 @@ block content
     section.fleets
         div.container
             div.row
-                div.col.text-center
-                    h2.text-uppercase Vehículos
+                div.col-lg-11.offset-lg-1.text-center
+                    div.text-left
+                        h2.text-uppercase Vehículos
             div.row.align-items-center
                 div.col-md-10.offset-md-1
                     div.row
-                        div.col-md.fleets__profesional
-                            h3.text-uppercase.animate(data-animations="slide-right") 
-                                a(href="fleet.html") Sedanes
-                            div.img-block
-                                .screen.animate(data-animations="show-image")
-                                img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/alquiler-carros-sedan.jpg' srcset="img/home/alquiler-carros-sedan.jpg 1x, img/home/alquiler-carros-sedan@2x.jpg 2x, img/home/alquiler-carros-sedan@3x.jpg 3x" alt='alquiler de vehiculos')
-                        div.col-md.fleets__enterprise.rellax
-                            h3.text-uppercase.animate(data-animations="slide-right") 
-                                a(href="fleet.html") SUVS
-                            div.img-block
-                                .screen.animate(data-animations="show-image")
-                                img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/suvs.jpg' srcset="img/home/suvs.jpg 1x, img/home/suvs@2x.jpg 2x, img/home/suvs@3x.jpg 3x" alt='alquiler de vehiculos')
-                        div.col-md.fleets__profesional
-                            h3.text-uppercase.animate(data-animations="slide-right") 
-                                a(href="fleet.html") Carga Liviana
-                            div.img-block
-                                .screen.animate(data-animations="show-image")
-                                img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/carga.jpg' srcset="img/home/carga.jpg 1x, img/home/carga@2x.jpg 2x, img/home/carga@3x.jpg 3x" alt='alquiler de vehiculos')
+                        div.col
+                            .card.card-body
+                                ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-md-column.flex-lg-row
+                                    li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
+                                        div.text-left
+                                            h4 Sedan
+                                        a(href="fleet.html#sedan")
+                                            img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
+                                            h5.mb-3 Toyota Yaris
+                                            ul.list-unstyled.d-flex.mb-3
+                                                li.media.pr-2.mr-2
+                                                    img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                                    .media-body.text-left 5
+                                                li.media.pr-2.mr-2
+                                                    img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                                    .media-body.text-left 5
+                                                li.media
+                                                    img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                                    .media-body.text-left.text-nowrap 1.5 lts
+                                    li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
+                                        div.text-left
+                                            h4 SUVs
+                                        a(href="fleet.html#suvs")
+                                            img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv2.png' srcset="img/fleet/suv2.png 1x, img/fleet/suv2@2x.png 2x, img/fleet/suv2@3x.png 3x" alt='alquiler de suv')
+                                            h5.mb-3 Toyota Yaris
+                                            ul.list-unstyled.d-flex.mb-3
+                                                li.media.pr-2.mr-2
+                                                    img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                                    .media-body.text-left 5
+                                                li.media.pr-2.mr-2
+                                                    img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                                    .media-body.text-left 5
+                                                li.media
+                                                    img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                                    .media-body.text-left.text-nowrap 1.5 lts
+                                    li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-08(data-animations="slide-right")
+                                        div.text-left
+                                            h4 Carga Liviana
+                                        a(href="fleet.html#carga-liviana")
+                                            img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
+                                            h5.mb-3 Toyota Yaris
+                                            ul.list-unstyled.d-flex.mb-3
+                                                li.media.pr-2.mr-2
+                                                    img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                                    .media-body.text-left 5
+                                                li.media.pr-2.mr-2
+                                                    img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                                    .media-body.text-left 5
+                                                li.media
+                                                    img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                                    .media-body.text-left.text-nowrap 1.5 lts

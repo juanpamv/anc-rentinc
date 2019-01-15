@@ -3,9 +3,6 @@
 	padding-bottom: 150px;
 
 	@include media-breakpoint-up(md){
-        .row:first-child{
-            min-height: 302px;
-        }
         min-height: 302px;
     }
 

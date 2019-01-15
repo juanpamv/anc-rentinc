@@ -1,15 +1,34 @@
 .contact-grid{
-    padding: 200px 0;
+    padding-left: 15px;
+    padding-right: 15px;
 
-    @include media-breakpoint-up(md) {
-        background-image: url(#{$imgPath}/home/gray-bg.svg);
-        background-position: left top;
-        background-size: 40% 100%;
-        background-repeat: no-repeat;
+    .bg-image{
+        @include media-breakpoint-up(md) {
+            background-image: url(#{$imgPath}/home/gray-bg.svg);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
     }
 
-    @include media-breakpoint-up(lg) {
-        background-size: 50% 100%;
+    .fleets{
+        
+        img.car{
+            max-width: 250px;
+            width: 250px
+        }
+    }
+
+    .form{
+        padding-bottom: 50px;
+        padding-top: 100px;
+
+        @include media-breakpoint-up(md) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
     }
 
 
@@ -25,14 +44,9 @@
             width: 100px;
     
             @include media-breakpoint-up(md) {
-                margin-bottom: 90px;
+                margin-bottom: 50px;
             }
         }
-    }
-
-    img{
-        padding: 20px;
-        max-width: 300px;
     }
 
     .left-column{

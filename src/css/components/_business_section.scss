@@ -1,8 +1,5 @@
 .business-container{
     @include media-breakpoint-up(md){
-        .row:first-child{
-            min-height: 302px;
-        }
         min-height: 302px;
     }
 
@@ -22,11 +19,6 @@
         overflow: hidden;
         @include media-breakpoint-up(lg){
             position: absolute;
-        }
-    }
-    .cargo-container{
-        @include media-breakpoint-up(lg){
-            margin-top: 82px;
         }
     }
 

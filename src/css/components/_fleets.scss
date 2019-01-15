@@ -4,13 +4,6 @@
     @include media-breakpoint-up(md) {
         margin-bottom: 150px;
     }
-
-    h2{
-        &::after{
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
     
     &__profesional{
         margin-bottom: 40px;
@@ -38,6 +31,12 @@
 
         &:hover, &:active {
             color: $light-green;
+        }
+    }
+
+    ul {
+        li .media:not(:last-child) {
+            border-right: 1px solid #979797;
         }
     }
 }

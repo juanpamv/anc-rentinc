@@ -9,49 +9,64 @@ block page
 
 block content
     div.contact-grid
-        section.container
-            div.row
-                div.col-md-5.col-lg-5.offset-lg-1.right-column.mb-5.mb-md-0
-                    h1.text-uppercase Cotizar
-                    img.d-block.img-fluid(src='img/fleet/suv1@3x.png' alt='alquiler de suv')
-                div.col-md-5.offset-md-1.col-lg-4.offset-lg-1.animate.slide-right.left-column
-                    p.mb-3 Cotice hoy el carro nuevo que usted y su negocio necesitan con Renting Profesional.
-                    form(action="")
-                        div.form-group
-                            label(for='name') Nombre:
-                            input#name.form-control(type='text' aria-describedby='name' placeholder='')
-                        div.form-group
-                            label(for='company') Empresa:
-                            input#company.form-control(type='text' aria-describedby='company' placeholder='')
-                        div.form-group
-                            label(for='job') Profesi&oacute;n:
-                            input#job.form-control(type='text' aria-describedby='job' placeholder='')
-                        div.form-group
-                            label(for='email') Email:
-                            input#email.form-control(type='email' aria-describedby='email' placeholder='')
-                        div.form-group
-                            label(for='phone') Tel&eacute;fono:
-                            input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
-                        div.form-group
-                            label(for='time') Plazo:
-                            <select class="form-control" id="time">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        div.form-group
-                            label(for='brand') Marca:
-                            <select class="form-control" id="brand">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        div.form-group
-                            label(for='brand') Observaciones:
-                            <textarea class="form-control" id="brand" rows="3"></textarea>
-                        <button type="submit" class="btn btn-primary cancel">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Cotizar</button>
+        div.row
+            div.col-12.col-md-6.bg-image.d-none.d-md-block
+                div.row
+                    div.col-lg-10.offset-lg-2.fleets
+                        h1.text-uppercase Cotizar
+                        p.mb-3 Cotice hoy el carro nuevo que usted y su negocio necesitan con Renting Profesional.
+                        .card.card-body
+                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-md-column.flex-lg-row
+                                li.text-center.mb-5.mb-md-0
+                                    img.d-block.mx-auto.mb-4.car(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
+                                    h5.mb-3 Toyota Yaris
+                                    ul.list-unstyled.d-flex.mb-3
+                                        li.media.pr-2.mr-2
+                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                            .media-body.text-left 5
+                                        li.media.pr-2.mr-2
+                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                            .media-body.text-left 5
+                                        li.media
+                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                            .media-body.text-left.text-nowrap 1.5 lts
+            div.col-12.col-md-6.col-lg-4.form
+                form(action="")
+                    div.form-group
+                        label(for='name') Nombre:
+                        input#name.form-control(type='text' aria-describedby='name' placeholder='')
+                    div.form-group
+                        label(for='company') Empresa:
+                        input#company.form-control(type='text' aria-describedby='company' placeholder='')
+                    div.form-group
+                        label(for='job') Profesi&oacute;n:
+                        input#job.form-control(type='text' aria-describedby='job' placeholder='')
+                    div.form-group
+                        label(for='email') Email:
+                        input#email.form-control(type='email' aria-describedby='email' placeholder='')
+                    div.form-group
+                        label(for='phone') Tel&eacute;fono:
+                        input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
+                    div.form-group
+                        label(for='time') Plazo:
+                        <select class="form-control" id="time">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    div.form-group
+                        label(for='brand') Modelo:
+                        <select class="form-control" id="brand">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    div.form-group
+                        label(for='brand') Observaciones:
+                        <textarea class="form-control" id="brand" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary cancel">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Cotizar</button>
