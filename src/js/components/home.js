@@ -21,8 +21,6 @@ var home = (function() {
     function windowOnScroll(){
         scrollPosition($('.animate'));
     }
-    
-    
 
     // cache DOM elements
     function cacheDom() {

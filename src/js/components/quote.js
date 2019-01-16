@@ -21,6 +21,12 @@ var quote = (function() {
     function windowOnScroll(){
         scrollPosition($('.animate'));
     }
+
+    function updateSelectedCar(){
+        var car = $('.'+DOM.carSelect.val());
+        DOM.cars.hide();
+        car.show();
+    }
     
     
 
@@ -28,11 +34,15 @@ var quote = (function() {
     function cacheDom() {
         DOM.animatedItems = $('.animate');
         DOM.window = $(window);
+        DOM.carSelect= $('#model');
+        DOM.carContainer = $('.cars');
+        DOM.cars = $('.car');
     }
  
     // Bind Events To UI
     function bindEvents() {
         DOM.window.on('scroll', windowOnScroll)
+        DOM.carSelect.on('change', updateSelectedCar)
     }
 
     // Component Init

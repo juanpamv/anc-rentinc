@@ -16,10 +16,23 @@ block content
                         h1.text-uppercase Cotizar
                         p.mb-3 Cotice hoy el carro nuevo que usted y su negocio necesitan con Renting Profesional.
                         .card.card-body
-                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-md-column.flex-lg-row
-                                li.text-center.mb-5.mb-md-0
+                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-md-column.flex-lg-row.cars
+                                li.text-center.mb-5.mb-md-0.car.yaris
                                     img.d-block.mx-auto.mb-4.car(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
                                     h5.mb-3 Toyota Yaris
+                                    ul.list-unstyled.d-flex.mb-3
+                                        li.media.pr-2.mr-2
+                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
+                                            .media-body.text-left 5
+                                        li.media.pr-2.mr-2
+                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
+                                            .media-body.text-left 5
+                                        li.media
+                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
+                                            .media-body.text-left.text-nowrap 1.5 lts
+                                li.text-center.mb-5.mb-md-0.car.elantra
+                                    img.d-block.mx-auto.mb-4.car(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
+                                    h5.mb-3 Hyundai Elantra
                                     ul.list-unstyled.d-flex.mb-3
                                         li.media.pr-2.mr-2
                                             img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
@@ -58,12 +71,9 @@ block content
                         </select>
                     div.form-group
                         label(for='brand') Modelo:
-                        <select class="form-control" id="brand">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select class="form-control" id="model">
+                            <option value="yaris">Toyota Yaris</option>
+                            <option value="elantra">Hyundai Elantra</option>
                         </select>
                     div.form-group
                         label(for='brand') Observaciones:
