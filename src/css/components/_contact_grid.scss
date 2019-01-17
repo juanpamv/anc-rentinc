@@ -16,8 +16,8 @@
     .fleets{
         
         img.car{
-            max-width: 250px;
-            width: 250px
+            max-width: 270px;
+            width: 270px
         }
     }
 
@@ -52,6 +52,25 @@
     .left-column{
         background-color: $white;
         padding: 10px;
+    }
+
+    .form-control{
+        @include media-breakpoint-up(md) {
+            display: inline-block;
+            width: 70%;
+            float: right;
+        }
+    }
+
+    .button-container{
+        padding-top: 20px;
+        margin-top: 85px;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 20px;
+            margin-top: 60px;
+        }
+
     }
 
     .btn{

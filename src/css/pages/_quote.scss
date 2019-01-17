@@ -1,7 +1,11 @@
 .quote{
 
     .bg-image{
-        
+        background-image: url(#{$imgPath}/tucson-header@2x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     .cars{
