@@ -12,9 +12,9 @@ block content
         div.container
             div.row
                 div.info-wrapper.col-md-6.col-lg-5.offset-lg-1
-                    h1.text-uppercase Servicio de Carro Sustituto
+                    h1.text-uppercase ¡Cotice el Carro Sustituto que necesita con nosotros!
                     p
-                        strong Enterprise Rent-A-Car es líder en servicio de carro sustituto y renta de vehículos. El servicio de CARRO SUSTITUTO está dirigido a personas quienes tengan alguna situación que les impida utilizar su carro propio.
+                        strong Somos líderes en el servicio de carro sustituto y renta de vehículos.
                 div.col-md-5.col-lg-5.contact-grid.offset-md-1
                     form(action="")
                         div.form-group
@@ -33,39 +33,68 @@ block content
                             label(for='brand') Mensaje *
                             <textarea class="form-control" id="brand" rows="3"></textarea>
                         <button type="submit" class="btn btn-primary cancel">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Enviar</button>        
+                        <button type="submit" class="btn btn-primary">Enviar</button>   
+    section.plans
+        div.container
+            div.row
+                div.col-lg-10.offset-lg-1
+                    h2.text-uppercase  ¿Cu&aacute;ndo puede rentar un carro sustituto?
+            div.row
+                div.col-lg-10.offset-lg-1
+                    div.row
+                        div.col.col-12.col-md.mb-3
+                            div.img-block
+                                .screen.animate(data-animations="show-image")
+                                img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/choque.jpg' srcset="img/choque.jpg 1x, img/choque@2x.jpg 2x, img/choque@3x.jpg 3x" alt='alquiler de vehiculos')                            
+                            h4  Choque
+                            p
+                                a.drop(data-toggle='collapse' href='#carCrash' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                    | Ver m&aacute;s
+                            #carCrash.collapse.mt-3
+                                .card.card-body
+                                    p Presentar aviso de tránsito u orden de trabajo del taller.
+                                    p.small *En caso de NO presentar los documentos requeridos, NO aplica la tarifa de carro sustituto en ninguno de los casos. Si el cliente cuenta con la cobertura con alguna aseguradora puede tramitarlo por medio de esta o puede solicitar el reembolso con la factura que le otorgamos.
+                        div.col.col-12.col-md.mb-3
+                            div.img-block
+                                .screen.animate(data-animations="show-image")
+                                img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/taller.jpg' srcset="img/taller.jpg 1x, img/taller@2x.jpg 2x, img/taller@3x.jpg 3x" alt='alquiler de vehiculos')
+                            h4  Su carro está en el taller
+                            p
+                                a.drop(data-toggle='collapse' href='#carFixing' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                    | Ver m&aacute;s
+                            #carFixing.collapse.mt-3
+                                .card.card-body
+                                    p Presentar orden del taller.
+                                    p.small *En caso de NO presentar los documentos requeridos, NO aplica la tarifa de carro sustituto en ninguno de los casos. Si el cliente cuenta con la cobertura con alguna aseguradora puede tramitarlo por medio de esta o puede solicitar el reembolso con la factura que le otorgamos.
+                        div.col.col-12.col-md.mb-3
+                            div.img-block
+                                .screen.animate(data-animations="show-image")
+                                img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/carro-nuevo.jpg' srcset="img/carro-nuevo.jpg 1x, img/carro-nuevo@2x.jpg 2x, img/carro-nuevo@3x.jpg 3x" alt='alquiler de vehiculos')
+                            h4  En espera de su carro nuevo  
+                            p
+                                a.drop(data-toggle='collapse' href='#waitCar' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                    | Ver m&aacute;s
+                            #waitCar.collapse.mt-3
+                                .card.card-body
+                                    p Presentar la orden de agencia.
+                                    p.small *En caso de NO presentar los documentos requeridos, NO aplica la tarifa de carro sustituto en ninguno de los casos. Si el cliente cuenta con la cobertura con alguna aseguradora puede tramitarlo por medio de esta o puede solicitar el reembolso con la factura que le otorgamos.
                 
     section.gray-container.homepage-container
         div.container
                 div.row
-                    .how-to-rent.col-md-10.offset-md-1.mb-5
-                        h2 ¿Cuando puede rentar un carro sustituto?
+                    .how-to-rent.col-md-5.offset-md-1
+                        h2.text-uppercase  Beneficios
                         ul.animate(data-animations="slide-right")
-                            li Choque
-                            li Carro en el taller (reparación, mantenimiento, revisión de kilómetros)
-                            li Compra de vehículo (espera por le entreguen el carro)
-
-                div.row
-                    .benefits.col-md-10.offset-md-1.mb-5.slide-right
-                        h2 Beneficios para el cliente:
-                        ul.animate(data-animations="slide-right")
-                            li Tarifa permanente durante todo el año.
-                            li Flota disponible todo el año.
-                            li Depósito de garantía reducido.
-                            li Le llevamos el carro o lo recogemos.
-                            li Tarifa especial en talleres afiliados.
-                            li No hay límite de días, puede rentar desde un día en adelante cualquier día del año.
-                            li Tenemos cobertura en todo el país.
                             li Libre kilometraje.
-                            li Flota nueva (máximo carros con 2 años).
-                            li Servicio telefónico de emergencias 24 horas.
-
-                div.row
-                    .req.col-md-10.offset-md-1.slide-right
-                        h2 Requisitos para aplicar la tarifa:
-                        ul.mb-4.animate(data-animations="slide-right")
-                            li Choque: Presentar aviso de tránsito u orden de trabajo del taller.
-                            li Carro en el taller: Presentar orden del taller.
-                            li Compra de vehículo: Orden de agencia.
-
-                        p.disclaimer.animate(data-animations="slide-right") *En caso de NO presentar los documentos requeridos, NO aplica la tarifa de carro sustituto en ninguno de los casos. Si el cliente cuenta con la cobertura con alguna aseguradora puede tramitarlo por medio de esta o puede solicitar el reembolso con la factura que le otorgamos.            
+                            li Cobertura en todo el país.
+                            li Flota disponible todo el año.
+                            li Deposito de garantía reducido.
+                            li Entrega del carro en casa u oficina.
+                            li Tarifa especial en talleres afiliados.
+                            li Tarifa permanente durante todo el año.
+                            li Servicio disponible cualquier día del año.
+                            li Servicio telefónico de emergencias 24 horas.
+                            li Sin límite de días de renta (de 1 día en adelante).
+                            li Moderna flota de carros (nuevos o con máximo 2 años).
+                    .col-md-5.d-none.d-md-block
+                        img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/requisitos.jpg' srcset="img/requisitos.jpg 1x, img/requisitos@2x.jpg 2x, img/requisitos@3x.jpg 3x" alt='alquiler de vehiculos')

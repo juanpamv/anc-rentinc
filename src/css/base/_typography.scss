@@ -6,16 +6,27 @@
 // ========================= //
 //         HEADINGS          //
 // ========================= //
-h1,
-h2 {
-    @include fontSize(35px);
+h1{
+    @include fontSize(30px);
     font-family: $font-gotham-bold;
     font-weight: 800;
     line-height: normal;
     margin-bottom: 10px;
     @include media-breakpoint-up(md) {
-        @include fontSize(50px);
-        line-height: 60px;
+        @include fontSize(30px);
+        line-height: 35px;
+    }
+}
+
+h2 {
+    @include fontSize(30px);
+    font-family: $font-gotham-bold;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+        @include fontSize(40px);
+        line-height: 40px;
     }
 }
 

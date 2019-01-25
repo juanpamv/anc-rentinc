@@ -2,50 +2,14 @@
 	background-color: $green;
 	.navbar-brand{
 		margin-right: 6px;
-	}
-	.navbar-toggler-icon{
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-	}
-	nav{
-		li{
-			@include media-breakpoint-up(md){
-				width: 139px;
-			}
-			.nav-link{
-				@include fontSize(16px);
-			//	font-family: 'gotham_mediumregular';
-				color: $white;
-				font-weight: 500;
-				line-height: normal;
-				&:hover,
-				&.active{
-					color: $light-green;
-				}
-			}
+
+		img{
+			border: solid 1px $white;
 		}
 	}
-}
-
-.home .navbar-nav .nav-item a.home{
-	color: $light-green;
-}
-
-.fleet .navbar-nav .nav-item a.fleet{
-	color: $light-green;
-}
-
-.requierements .navbar-nav .nav-item a.requirements{
-	color: $light-green;
-}
-
-.quote .navbar-nav .nav-item a.quote{
-	color: $light-green;
-}
-
-.questions .navbar-nav .nav-item a.questions{
-	color: $light-green;
-}
-
-.contact .navbar-nav .nav-item a.contact{
-	color: $light-green;
+	p{
+		color: $white;
+		font-size: 15px;
+    	line-height: 18px;
+	}
 }
