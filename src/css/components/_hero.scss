@@ -16,8 +16,10 @@
     background-size: cover;
     background-attachment: fixed;
     .info-wrapper {
+        padding-top: 0;
         transform: translateY(25%);
         @include media-breakpoint-down(sm) {
+            padding-top: 60px;
             @include full-width-hero-bg;
             align-items: baseline;
         }
