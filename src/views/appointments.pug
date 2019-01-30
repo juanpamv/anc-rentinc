@@ -1,0 +1,50 @@
+extends layout/layout.pug
+
+block head
+    - var title = "Renting | Cotizar vehículos"
+    - var description = "this is the description"
+
+block page
+    - var page = "quote";
+
+block content
+    div.contact-grid
+        div.row
+            div.col-12.col-md-6.bg-image.d-none.d-md-block
+                div.row
+                    div.col-lg-10.offset-lg-2.fleets
+                        h1.text-uppercase(style="font-size:30px; line-height: 39px;") Obtenga su cita de mantenimiento
+                        p.mb-3 Llámenos al: 2242-7745 <br />
+                            | Escríbanos a mantenimientorenting@grupoanc.com<br />
+                            | Horario de Atención a Consultas.<br />
+                            | De Lunes a Viernes 7:30 am a 5:30 pm.<br />
+            div.col-12.col-md-6.col-lg-5.form
+                form(action="")
+                    div.form-group
+                        label(for='name') Fecha:
+                        input#name.form-control(type='text' aria-describedby='name' placeholder='')
+                    div.form-group
+                        label(for='company') Hora:
+                        input#company.form-control(type='text' aria-describedby='company' placeholder='')
+                    div.form-group
+                        label(for='email') Email:
+                        input#email.form-control(type='email' aria-describedby='email' placeholder='')
+                    div.form-group
+                        label(for='phone') Tel&eacute;fono:
+                        input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
+                    div.form-group
+                        label(for='phone') Placa:
+                        input#phone.form-control(type='text' aria-describedby='phone' placeholder='')
+                    div.form-group
+                        label(for='time') Estaci&oacute;n:
+                        <select class="form-control" id="time">
+                            <option>San Jos&eacute;</option>
+                            <option>Liberia</option>
+                            <option>3 años</option>
+                        </select>
+                    div.form-group
+                        label(for='brand') Observaciones:
+                        <textarea class="form-control" id="brand" rows="3"></textarea>
+                    div.form-group.button-container
+                        <button type="submit" class="btn btn-primary cancel">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Cotizar</button>

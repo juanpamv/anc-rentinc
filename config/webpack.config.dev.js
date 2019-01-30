@@ -41,6 +41,10 @@ var htmlConfig = {
 			filename: 'quote.html',
 			template: './src/views/quote.pug'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'appointments.html',
+			template: './src/views/appointments.pug'
+		}),
 	],
 	module: {
 		rules: [
