@@ -15,6 +15,10 @@
 		@include media-breakpoint-up(md) {
 			margin-bottom: 0;
 		}
+
+		img{
+			border: solid 1px #fff;
+		}
 	}
 
 	h4{
@@ -38,6 +42,12 @@
 
 		@include media-breakpoint-down(md) {
 			margin-bottom: 40px;
+		}
+
+		a{
+			word-break: break-word;
+			color: $white;
+			text-decoration: underline;
 		}
 
 		&.footnote{
