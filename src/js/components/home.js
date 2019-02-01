@@ -20,6 +20,7 @@ var home = (function() {
 
     function windowOnScroll(){
         scrollPosition($('.animate'));
+        console.log("hellos")
     }
 
     // cache DOM elements
