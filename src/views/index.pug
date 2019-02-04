@@ -86,16 +86,34 @@ block content
                                 .screen.animate(data-animations="show-image")
                                 img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/empresarial.jpg' srcset="img/home/empresarial.jpg 1x, img/home/empresarial@2x.jpg 2x, img/home/empresarial@3x.jpg 3x" alt='alquiler de vehiculos')                            
                             h4  Profesional independiente
+                            p
+                                a.drop(data-toggle='collapse' href='#profesional' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                    | Ver m&aacute;s
+                            #profesional.collapse.mt-3
+                                .card.card-body
+                                    p.small *En este caso, deb&eacute;s tener la autorizaci&oacute;n de la aseguradora. Si cont&aacute;s con la cobertura en tu p&oacute;liza de autom&oacute;viles, pod&eacute;s tramitarlo por medio de la Aseguradora o pod&eacute;s solicitar el reembolso con la factura que te entreguemos de la renta solicitada.
                         div.col.col-12.col-md
                             div.img-block
                                 .screen.animate(data-animations="show-image")
                                 img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/profesional-independiente.jpg' srcset="img/home/profesional-independiente.jpg 1x, img/home/profesional-independiente@2x.jpg 2x, img/home/profesional-independiente@3x.jpg 3x" alt='alquiler de vehiculos')
                             h4  Empresas
+                            p
+                                a.drop(data-toggle='collapse' href='#companies' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                    | Ver m&aacute;s
+                            #companies.collapse.mt-3
+                                .card.card-body
+                                    p.small *En este caso, deb&eacute;s tener la autorizaci&oacute;n de la aseguradora. Si cont&aacute;s con la cobertura en tu p&oacute;liza de autom&oacute;viles, pod&eacute;s tramitarlo por medio de la Aseguradora o pod&eacute;s solicitar el reembolso con la factura que te entreguemos de la renta solicitada.
                         div.col.col-12.col-md
                             div.img-block
                                 .screen.animate(data-animations="show-image")
                                 img.d-block.mw-100.centered-image.animate(data-animations="fade-in" src='img/home/negocios.jpg' srcset="img/home/negocios.jpg 1x, img/home/negocios@2x.jpg 2x, img/home/negocios@3x.jpg 3x" alt='alquiler de vehiculos')
-                            h4  Viajero de negocios           
+                            h4  Viajero de negocios
+                            p
+                                a.drop(data-toggle='collapse' href='#business' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                    | Ver m&aacute;s
+                            #business.collapse.mt-3
+                                .card.card-body
+                                    p.small *En este caso, deb&eacute;s tener la autorizaci&oacute;n de la aseguradora. Si cont&aacute;s con la cobertura en tu p&oacute;liza de autom&oacute;viles, pod&eacute;s tramitarlo por medio de la Aseguradora o pod&eacute;s solicitar el reembolso con la factura que te entreguemos de la renta solicitada.           
     section.fleets
         div.container
             div.row
@@ -103,56 +121,29 @@ block content
                     div.text-left
                         h2.text-uppercase Vehículos
             div.row.align-items-center
-                div.col-md-10.offset-md-1
-                    div.row
-                        div.col
-                            .card.card-body
-                                ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-md-column.flex-lg-row
-                                    li.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
-                                        div.text-left
-                                            h4 Sedan
-                                        a(href="fleet.html#sedan")
-                                            img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
-                                            h5.mb-3 Toyota Yaris
-                                            ul.list-unstyled.d-flex.mb-3
-                                                li.media.pr-2.mr-2
-                                                    img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                    .media-body.text-left 5
-                                                li.media.pr-2.mr-2
-                                                    img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                    .media-body.text-left 5
-                                                li.media
-                                                    img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                    .media-body.text-left.text-nowrap 1.5 lts
-                                    li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
-                                        div.text-left
-                                            h4 SUVs
-                                        a(href="fleet.html#suvs")
-                                            img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/suv2.png' srcset="img/fleet/suv2.png 1x, img/fleet/suv2@2x.png 2x, img/fleet/suv2@3x.png 3x" alt='alquiler de suv')
-                                            h5.mb-3 Toyota Yaris
-                                            ul.list-unstyled.d-flex.mb-3
-                                                li.media.pr-2.mr-2
-                                                    img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                    .media-body.text-left 5
-                                                li.media.pr-2.mr-2
-                                                    img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                    .media-body.text-left 5
-                                                li.media
-                                                    img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                    .media-body.text-left.text-nowrap 1.5 lts
-                                    li.text-center.mx-auto.mb-5.mb-md-0.animate.delay-08(data-animations="slide-right")
-                                        div.text-left
-                                            h4 Carga Liviana
-                                        a(href="fleet.html#carga-liviana")
-                                            img.d-block.mw-100.mx-auto.mb-4(src='img/fleet/vehiculo-carga1.png' srcset="img/fleet/vehiculo-carga1.png 1x, img/fleet/vehiculo-carga1@2x.png 2x, img/fleet/vehiculo-carga1@3x.png 3x" alt='alquiler vehiculo de carga')
-                                            h5.mb-3 Toyota Yaris
-                                            ul.list-unstyled.d-flex.mb-3
-                                                li.media.pr-2.mr-2
-                                                    img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                    .media-body.text-left 5
-                                                li.media.pr-2.mr-2
-                                                    img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                    .media-body.text-left 5
-                                                li.media
-                                                    img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                    .media-body.text-left.text-nowrap 1.5 lts
+                div.col
+                    div.row.align-items-center
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/bmw.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/ford.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/hino.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/honda.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/hyundai.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/Isuzu.png' alt='BMW')
+                    div.row.align-items-center
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/lexus.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/renault.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/suzuki.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/toyota.png' alt='BMW')
+                        div.col-xs-12.col-md-4.col-lg-2
+                            img.d-block.mx-auto(src='img/car-logos/volkswagen.png' alt='BMW')
+                        

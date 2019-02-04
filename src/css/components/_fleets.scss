@@ -39,4 +39,16 @@
             border-right: 1px solid #979797;
         }
     }
+
+    img{
+        max-width: 50%;
+
+        @include media-breakpoint-up(md) {
+            max-width: 70%;
+        }
+    }
+
+    .align-items-center{
+        margin-bottom: 10px;
+    }
 }
