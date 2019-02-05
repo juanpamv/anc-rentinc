@@ -1,5 +1,8 @@
 .renting{
-    padding-bottom: 180px;
+    padding-bottom: 100px;
+    @include media-breakpoint-up(md){
+        padding-bottom: 180px;
+    }
     h4{
         background-color: $green;
         color: $white;
