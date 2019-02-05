@@ -4,6 +4,9 @@
         padding-bottom: 180px;
     }
     img{
-        width: 130px;
+        width: 100px;
+        @include media-breakpoint-up(md){
+            width: 130px;
+        }
     }
 }
