@@ -19,9 +19,8 @@ var home = (function() {
     /* =================== Public methods ================= */
 
     function windowOnScroll(){
-        console.log("Hello");
         scrollPosition($('.animate'));
-        console.log("Hello");
+        console.log("hello")
     }
     
     
