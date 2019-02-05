@@ -121,29 +121,75 @@ block content
                     div.text-left
                         h2.text-uppercase ¿POR QUÉ ANC RENTING ES IDEAL PARA SU NEGOCIO? RENTING VS. LEASING
             div.row
-                div.col-xs-12.col-md-4.offset-md-1
-                    h4.pl-4.pr-4.pt-2.pb-2.mb-3 Renting
-                    ul.pl-4
-                        li No requiere prima.
-                        li No afecta la capacidad de pago, ya no es una deuda.
-                        li Cuota fija todo el periodo.
-                        li Alquiler 100% deducible de impuestos. 
-                        li Servicio de mantenimiento. 
-                        li Gastos de circulación incluidos. 
-                        li Carro sustituto en caso de accidentes. *
-                        li Incluye seguro.
-                div.col-xs-12.col-md-4.offset-md-1
-                    h4.pl-4.pr-4.pt-2.pb-2.mb-3 Leasing
-                    ul.pl-4
-                        li Si requiere prima.
-                        li Afecta la capacidad de pago, ya que es una deuda.
-                        li Variable de acuerdo a la tasa de intereses.
-                        li Cuota no deducible de impuesto en su totalidad.
-                        li No incluye servicio de mantenimiento. 
-                        li No incluye gastos de circulación. 
-                        li No incluye carro sustituto en caso de accidentes. 
-                        li Incluye seguro.
-                            
+                div.table.col-xs-12.col-md-8.offset-md-2.d-none.d-md-block
+                    .row
+                        .col-12.col-md-6.header
+                            h4.pl-4.pr-4.pt-2.pb-2.mb-3 Renting
+                        .col-12.col-md-6.header
+                            h4.pl-4.pr-4.pt-2.pb-2.mb-3 Leasing
+                    .row
+                        .col-12.col-md-6
+                            li No requiere prima.
+                        .col-12.col-md-6
+                            li Si requiere prima.
+                    .row
+                        .col-12.col-md-6
+                            li No afecta la capacidad de pago, ya no es una deuda.
+                        .col-12.col-md-6
+                            li Afecta la capacidad de pago, ya que es una deuda.
+                    .row
+                        .col-12.col-md-6
+                            li Cuota fija todo el periodo.
+                        .col-12.col-md-6
+                            li Variable de acuerdo a la tasa de intereses.
+                    .row
+                        .col-12.col-md-6
+                            li Alquiler 100% deducible de impuestos. 
+                        .col-12.col-md-6
+                            li Cuota no deducible de impuesto en su totalidad.
+                    .row
+                        .col-12.col-md-6
+                            li Servicio de mantenimiento. 
+                        .col-12.col-md-6
+                            li No incluye servicio de mantenimiento. 
+                    .row
+                        .col-12.col-md-6
+                            li Gastos de circulación incluidos.
+                        .col-12.col-md-6
+                            li No incluye gastos de circulación.
+                    .row
+                        .col-12.col-md-6
+                            li Carro sustituto en caso de accidentes. * 
+                        .col-12.col-md-6
+                            li No incluye carro sustituto en caso de accidentes.
+                    .row
+                        .col-12.col-md-6
+                            li Incluye seguro.
+                        .col-12.col-md-6
+                            li Incluye seguro.
+                div.table.col-xs-12.col-md-8.offset-md-2.d-block.d-md-none
+                    div.rent
+                        h4.pl-4.pr-4.pt-2.pb-2.mb-3 Renting
+                        ul.pl-4
+                            li No requiere prima.
+                            li No afecta la capacidad de pago, ya no es una deuda.
+                            li Cuota fija todo el periodo.
+                            li Alquiler 100% deducible de impuestos. 
+                            li Servicio de mantenimiento. 
+                            li Gastos de circulación incluidos. 
+                            li Carro sustituto en caso de accidentes. *
+                            li Incluye seguro.
+                    div.leasing
+                        h4.pl-4.pr-4.pt-2.pb-2.mb-3 Leasing
+                        ul.pl-4
+                            li Si requiere prima.
+                            li Afecta la capacidad de pago, ya que es una deuda.
+                            li Variable de acuerdo a la tasa de intereses.
+                            li Cuota no deducible de impuesto en su totalidad.
+                            li No incluye servicio de mantenimiento. 
+                            li No incluye gastos de circulación. 
+                            li No incluye carro sustituto en caso de accidentes. 
+                            li Incluye seguro.           
     section.fleets
         div.container
             div.row
@@ -151,7 +197,7 @@ block content
                     div.text-left
                         h2.text-uppercase Vehículos
             div.row
-                div.col-lg-11.offset-lg-1
+                div.col-lg-12
                     ul.d-flex.align-items-center.flex-md-wrap.list-unstyled.justify-content-md-between.flex-column.flex-md-row
                         li.animate(data-animations="slide-right")
                             img.d-block.ml-4.mr-4.mb-5(src='img/car-logos/bmw.png' alt='BMW')

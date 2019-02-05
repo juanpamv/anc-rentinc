@@ -3,11 +3,29 @@
     @include media-breakpoint-up(md){
         padding-bottom: 180px;
     }
+    h2{
+        @include fontSize(40px);
+    }
     h4{
         background-color: $green;
         color: $white;
     }
     ul{
 
+    }
+    .header{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .table{
+        .row{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $green;
+        }
+    }
+
+    .rent{
+        margin-bottom: 20px;
     }
 }

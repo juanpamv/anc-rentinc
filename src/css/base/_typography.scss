@@ -24,7 +24,12 @@ h1{
 }
 
 h2{
-    margin-bottom: 10px;
+    @include fontSize(35px);
+
+    @include media-breakpoint-up(md){
+        @include fontSize(40px);
+        line-height: 50px;
+    }
 
     &::after{
         background-color: $light-green;
