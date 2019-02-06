@@ -13,8 +13,8 @@ block content
             div.col-12.col-md-6.bg-image.d-none.d-md-block
                 div.row
                     div.col-lg-10.offset-lg-2.fleets                        
-            div.col-12.col-md-6.col-lg-4.form
-                p ¡Cont&aacute;ctenos! Le cotizamos el carro nuevo que usted y su negocio necesitan.
+            div.col-12.col-md-6.col-lg-5.form
+                p.mb-3 ¡Cont&aacute;ctenos! Le cotizamos el carro nuevo que usted y su negocio necesitan.
                 form(action="")
                     div.form-group
                         label(for='name') Nombre:
@@ -31,5 +31,6 @@ block content
                     div.form-group
                         label(for='brand') Observaciones:
                         <textarea class="form-control" id="brand" rows="3"></textarea>
-                    <button type="submit" class="btn btn-primary cancel">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    div.form-group.button-container
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary cancel">Cancelar</button>

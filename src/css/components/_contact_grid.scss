@@ -66,9 +66,14 @@
         padding-top: 20px;
         margin-top: 85px;
 
+        @include media-breakpoint-up(md) {
+            margin-left: 30%;
+        }
+
         @include media-breakpoint-up(lg) {
             padding-top: 20px;
             margin-top: 60px;
+            text-align: center;
         }
 
     }
@@ -80,6 +85,10 @@
         color: $white;
         padding: 9px 40px;
         appearance: none;
+        @include media-breakpoint-up(md) {
+            margin-top: 20px;
+        }
+
         &:hover,
         &:active,
         &:focus{
@@ -89,5 +98,7 @@
         &.cancel{
             background-color: $light-green;
         }
+        
+
     }
 }
