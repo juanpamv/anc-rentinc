@@ -74,3 +74,35 @@
 	}	
 }
 
+.carWrapper {
+	width: 300px;
+	height: 230px;
+	perspective: 500px;
+
+	&:hover .content {
+		transform: rotateY( 180deg ) ;
+		transition: transform 1s;
+	}
+
+	.content {
+		transition: transform 1s;
+		transform-style: preserve-3d;
+
+		.front,
+		.back {
+			background: $white;
+			backface-visibility: hidden;
+		}
+		
+		.back {
+			background: $green;
+			color: $white;
+			transform: rotateY( 180deg );
+		}
+	}
+}
+  
+  
+  
+  
+  
