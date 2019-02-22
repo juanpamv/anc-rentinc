@@ -21,11 +21,14 @@ block content
             div.col-12.col-md-6.col-lg-5.form
                 form(action="")
                     div.form-group
-                        label(for='name') Fecha:
+                        label(for='name') Nombre:
                         input#name.form-control(type='text' aria-describedby='name' placeholder='')
                     div.form-group
+                        label(for='date') Fecha:
+                        input#date.form-control(type='date' aria-describedby='date')
+                    div.form-group
                         label(for='company') Hora:
-                        input#company.form-control(type='text' aria-describedby='company' placeholder='')
+                        input#time.form-control(type='time' name='time' min='8:00' max='18:00' aria-describedby='company')
                     div.form-group
                         label(for='email') Email:
                         input#email.form-control(type='email' aria-describedby='email' placeholder='')
