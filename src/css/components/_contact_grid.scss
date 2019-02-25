@@ -42,8 +42,11 @@
     }
 
     .last-box{
-        @include media-breakpoint-up(md) {     
-            height: 85px;
+        width: 100%;
+        text-align: right;
+
+        .form-control{
+            float: none;
         }
     }
 
