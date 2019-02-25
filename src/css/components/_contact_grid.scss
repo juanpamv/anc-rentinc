@@ -25,6 +25,15 @@
         background-color: $white;
         padding: 10px;
     }
+
+    .last-box{
+        width: 100%;
+        text-align: right;
+
+        .form-control{
+            float: none;
+        }
+    }
     .btn {
         background-color: $green;
         border-radius: 0;
