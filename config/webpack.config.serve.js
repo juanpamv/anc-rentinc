@@ -6,7 +6,7 @@ module.exports = {
 		contentBase: "./",
 		open: true,
 		openPage: "dist/",
-		port: 9000,
+		port: 8000,
 		overlay: {
 			warnings: true,
 			errors: true
