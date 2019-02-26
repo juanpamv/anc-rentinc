@@ -1,0 +1,20 @@
+extends layout/layout.pug
+
+block head
+    - var title = "Renting | Variedad de vehículos"
+    - var description = "this is the description"
+
+block page
+    - var page = "home";
+
+block content
+    div.hero.pb-5
+        div.container
+            div.row.mt-5.mb-5
+                div.info-wrapper.col-md-6.col-lg-5.offset-lg-1
+                    h1.text-uppercase ¡COTIZ&Aacute; EL CARRO SUSTITUTO QUE NECESIT&Aacute;S!
+                    p
+                        strong Somos l&iacute;deres en el servicio de Carro Sustituto y renta de veh&iacute;culos.
+                div.col-md-5.col-lg-5.contact-grid.offset-md-1
+                    h2.mb-3.text-uppercase Gracias por contactarnos.
+                    a(href="/") < Volver
