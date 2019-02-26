@@ -38,12 +38,24 @@ var htmlConfig = {
 			template: './src/views/questions.pug'
 		}),
 		new HtmlWebpackPlugin({
+			filename: 'contact-thanks.html',
+			template: './src/views/contact-thanks.pug'
+		}),
+		new HtmlWebpackPlugin({
 			filename: 'quote.html',
 			template: './src/views/quote.pug'
 		}),
 		new HtmlWebpackPlugin({
+			filename: 'quote-thanks.html',
+			template: './src/views/quote-thanks.pug'
+		}),
+		new HtmlWebpackPlugin({
 			filename: 'appointments.html',
 			template: './src/views/appointments.pug'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'appointments-thanks.html',
+			template: './src/views/appointments-thanks.pug'
 		}),
 	],
 	module: {
