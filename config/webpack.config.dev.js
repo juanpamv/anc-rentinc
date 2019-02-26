@@ -21,6 +21,10 @@ var htmlConfig = {
 		new HtmlWebpackPlugin({
 			template: './src/views/index.pug'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'thanks.html',
+			template: './src/views/thanks.pug'
+		}),
 	],
 	module: {
 		rules: [
