@@ -20,6 +20,7 @@ var fleet = (function() {
 
     function windowOnScroll(){
         scrollPosition($('.animate'));
+        console.log("helo")
     }
     
     
