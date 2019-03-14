@@ -16,13 +16,13 @@ block content
                     p
                         strong Ofrecemos las mejores condiciones corporativas del mercado.
                 div.col-md-6.col-lg-5.contact-grid
-                    form(action="")
+                    form(action="mail.php" method="POST")
                         div.form-group
                             label(for='name') Nombre:
                             input#name.form-control(type='text' aria-describedby='name' placeholder='')
                         div.form-group
                             label(for='lastName') Apellidos:
-                            input#name.form-control(type='text' aria-describedby='LastName' placeholder='')
+                            input#last-name.form-control(type='text' aria-describedby='LastName' placeholder='')
                         div.form-group
                             label(for='company') Empresa:
                             input#company.form-control(type='text' aria-describedby='company' placeholder='')
@@ -59,9 +59,9 @@ block content
                                 <option value='Volkswagen'>Volkswagen</option>
                             </select>
                         div.form-group
-                            label(for='brand') Observaciones:
+                            label(for='comments') Observaciones:
                             .last-box
-                                <textarea class="form-control" id="brand" rows="3"></textarea>
+                                <textarea class="form-control" id="comments" rows="3"></textarea>
                         div.form-group
                             <button type="submit" class="btn btn-primary cancel">Cancelar</button>
                             <button type="submit" class="btn btn-primary">Cotizar</button>
