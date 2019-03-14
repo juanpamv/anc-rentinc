@@ -15,34 +15,6 @@ block content
                     div.col-lg-10.offset-lg-2.fleets
                         h1.text-uppercase Cotizar
                         p.mb-3 Cotice hoy el carro nuevo que usted y su negocio necesitan con Renting Profesional.
-                        .card.card-body
-                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5.flex-md-column.flex-lg-row.cars
-                                li.text-left.mb-5.mb-md-0.car.yaris
-                                    img.d-block.mx-auto.mb-4.car(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-left.mb-5.mb-md-0.car.elantra
-                                    img.d-block.mx-auto.mb-4.car(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
-                                    h5.mb-3 Hyundai Elantra
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
             div.col-12.col-md-6.col-lg-5.form
                 form(action="")
                     div.form-group
@@ -50,7 +22,7 @@ block content
                         input#name.form-control(type='text' aria-describedby='name' placeholder='')
                     div.form-group
                         label(for='lastName') Apellidos:
-                        input#name.form-control(type='text' aria-describedby='LastName' placeholder='')
+                        input#last-name.form-control(type='text' aria-describedby='LastName' placeholder='')
                     div.form-group
                         label(for='company') Empresa:
                         input#company.form-control(type='text' aria-describedby='company' placeholder='')
@@ -71,8 +43,8 @@ block content
                             <option>3 años</option>
                         </select>
                     div.form-group
-                        label(for='brand') Categoria:
-                        <select class="form-control" id="model">
+                        label(for='category') Categoria:
+                        <select class="form-control" id="category">
                             <option value="Mini">Mini</option>
                             <option value="Compacto">Compacto</option>
                             <option value="Sedan">Sedan</option>
@@ -85,7 +57,7 @@ block content
                         </select>
                     div.form-group
                         label(for='brand') Marca:
-                        <select class="form-control" id="model">
+                        <select class="form-control" id="brand">
                             <option value="Toyota">Toyota</option>
                             <option value="Suzuki">Suzuki</option>
                             <option value="Isuzu">Isuzu</option>
@@ -98,8 +70,8 @@ block content
                             <option value="Volkswagen">Volkswagen</option>
                         </select>
                     div.form-group
-                        label(for='kilomethers') Kilometraje anual:
-                        <select class="form-control" id="model">
+                        label(for='anual-km') Kilometraje anual:
+                        <select class="form-control" id="anual-km">
                             <option value="5000">5000</option>
                             <option value="10000">10000</option>
                             <option value="15000">15000</option>
@@ -111,39 +83,9 @@ block content
                             <option value="45000">45000</option>
                             <option value="50000">50000</option>
                         </select>
-
-                    .card.card-body.d-md-none
-                            ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.flex-md-column.flex-lg-row.cars
-                                li.text-left.mb-2.car.yaris
-                                    img.d-block.mx-auto.mb-4.car(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
-                                    h5.mb-3 Toyota Yaris
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-                                li.text-left.mb-2.car.elantra
-                                    img.d-block.mx-auto.mb-4.car(src='img/fleet/sedan1.png' srcset="img/fleet/sedan1.png 1x, img/fleet/sedan1@2x.png 2x, img/fleet/sedan1@3x.png 3x" alt='alquiler de sedanes')
-                                    h5.mb-3 Hyundai Elantra
-                                    ul.list-unstyled.d-flex.mb-3
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                            .media-body.text-left 5
-                                        li.media.pr-2.mr-2
-                                            img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                            .media-body.text-left 5
-                                        li.media
-                                            img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                            .media-body.text-left.text-nowrap 1.5 lts
-
                     div.form-group
-                        label(for='brand') Observaciones:
-                        <textarea class="form-control" id="brand" rows="3"></textarea>
+                        label(for='comments') Observaciones:
+                        <textarea class="form-control" id="comments" rows="3"></textarea>
                     div.form-group.button-container
                         <button type="submit" class="btn btn-primary">Cotizar</button>
                         <button type="submit" class="btn btn-primary cancel">Cancelar</button>

@@ -25,7 +25,7 @@ block content
                         input#name.form-control(type='text' aria-describedby='name' placeholder='')
                     div.form-group
                         label(for='lastName') Apellidos:
-                        input#name.form-control(type='text' aria-describedby='LastName' placeholder='')
+                        input#last-name.form-control(type='text' aria-describedby='LastName' placeholder='')
                     div.form-group
                         label(for='date') Fecha:
                         input#date.form-control(type='date' aria-describedby='date')
@@ -39,11 +39,11 @@ block content
                         label(for='phone') Tel&eacute;fono:
                         input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
                     div.form-group
-                        label(for='phone') Placa:
-                        input#phone.form-control(type='text' aria-describedby='phone' placeholder='')
+                        label(for='car id') Placa:
+                        input#car-id.form-control(type='text' aria-describedby='phone' placeholder='')
                     div.form-group
-                        label(for='time') Estaci&oacute;n:
-                        <select class="form-control" id="time">
+                        label(for='place') Estaci&oacute;n:
+                        <select class="form-control" id="place">
                             <option>Bel&eacute;n</option>
                             <option>Fortuna</option>
                             <option>Jac&oacute;</option>
@@ -57,8 +57,8 @@ block content
                             <option>Taller Móvil: Servicio a Domicilio en el GAM</option>
                         </select>
                     div.form-group
-                        label(for='brand') Observaciones:
-                        <textarea class="form-control" id="brand" rows="3"></textarea>
+                        label(for='comments') Observaciones:
+                        <textarea class="form-control" id="comments" rows="3"></textarea>
                     div.form-group.button-container
                         <button type="submit" class="btn btn-primary">Agendar cita</button>
                         <button type="submit" class="btn btn-primary cancel">Cancelar</button>
