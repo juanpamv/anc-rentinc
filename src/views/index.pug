@@ -16,13 +16,13 @@ block content
                     p
                         strong Somos l&iacute;deres en el servicio de Carro Sustituto y renta de veh&iacute;culos.
                 div.col-md-5.col-lg-5.contact-grid.offset-md-1
-                    form(action="")
+                    form(action="mail.php" method="POST")
                         div.form-group
                             label(for='name') Nombre *
                             input#name.form-control(type='text' aria-describedby='name' placeholder='')
                         div.form-group
                             label(for='lastName') Apellidos *
-                            input#company.form-control(type='text' aria-describedby='lastName' placeholder='')
+                            input#last-name.form-control(type='text' aria-describedby='lastName' placeholder='')
                         div.form-group
                             label(for='email') Email *
                             input#email.form-control(type='email' aria-describedby='email' placeholder='')
@@ -30,9 +30,9 @@ block content
                             label(for='phone') Tel&eacute;fono *
                             input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
                         div.form-group
-                            label(for='brand') Mensaje *
+                            label(for='message') Mensaje *
                             .last-box
-                                <textarea class="form-control" id="brand" rows="3"></textarea>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
                         <button type="submit" class="btn btn-primary cancel">Cancelar</button>
                         <button type="submit" class="btn btn-primary">Enviar</button>   
     section.plans
