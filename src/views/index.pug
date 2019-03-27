@@ -19,19 +19,19 @@ block content
                     form(action="mail.php" method="POST")
                         div.form-group
                             label(for='name') Nombre *
-                            input#name.form-control(type='text' aria-describedby='name' placeholder='')
+                            input#name.form-control(type='text' aria-describedby='name' name="name" placeholder='')
                         div.form-group
                             label(for='lastName') Apellidos *
-                            input#last-name.form-control(type='text' aria-describedby='lastName' placeholder='')
+                            input#last-name.form-control(type='text' aria-describedby='lastName' name="last-name" placeholder='')
                         div.form-group
                             label(for='email') Email *
-                            input#email.form-control(type='email' aria-describedby='email' placeholder='')
+                            input#email.form-control(type='email' name="email" aria-describedby='email' placeholder='')
                         div.form-group
                             label(for='phone') Tel&eacute;fono *
-                            input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
+                            input#phone.form-control(type='phone' name="phone" aria-describedby='phone' placeholder='')
                         div.form-group
                             label(for='message') Mensaje *
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                         <button type="submit" class="btn btn-primary">Enviar</button> 
                         <button type="submit" class="btn btn-primary cancel">Cancelar</button>  
     section.plans
