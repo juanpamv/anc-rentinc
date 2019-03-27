@@ -19,32 +19,32 @@ block content
                     form(action="mail.php" method="POST")
                         div.form-group
                             label(for='name') Nombre:
-                            input#name.form-control(type='text' aria-describedby='name' placeholder='')
+                            input#name.form-control(type='text' name="name" aria-describedby='name' placeholder='')
                         div.form-group
                             label(for='lastName') Apellidos:
-                            input#lastName.form-control(type='text' aria-describedby='LastName' placeholder='')
+                            input#lastName.form-control(type='text' name="lastName" aria-describedby='LastName' placeholder='')
                         div.form-group
                             label(for='company') Empresa:
-                            input#company.form-control(type='text' aria-describedby='company' placeholder='')
+                            input#company.form-control(type='text' name="company" aria-describedby='company' placeholder='')
                         div.form-group
                             label(for='job') Profesi&oacute;n:
-                            input#job.form-control(type='text' aria-describedby='job' placeholder='')
+                            input#job.form-control(type='text' name="job" aria-describedby='job' placeholder='')
                         div.form-group
                             label(for='email') Email:
-                            input#email.form-control(type='email' aria-describedby='email' placeholder='')
+                            input#email.form-control(type='email' name="email" aria-describedby='email' placeholder='')
                         div.form-group
                             label(for='phone') Tel&eacute;fono:
-                            input#phone.form-control(type='phone' aria-describedby='phone' placeholder='')
+                            input#phone.form-control(type='phone' name="phone" aria-describedby='phone' placeholder='')
                         div.form-group
                             label(for='time') Plazo:
-                            <select class="form-control" id="time">
+                            <select class="form-control" id="time" name="time">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
                         div.form-group
                             label(for='brand') Marca:
-                            <select class="form-control" id="brand">
+                            <select class="form-control" id="brand" name="brand">
                                 <option value='gran-nomade'>Suzuki Gran Nomade o similar</option>
                                 <option value='nu-dzire'>Suzuki Nu Dzire o similar</option>
                                 <option value='corolla'>Toyota Corolla o similar</option>
@@ -53,7 +53,7 @@ block content
                         div.form-group
                             label(for='observations') Observaciones:
                             .last-box
-                                <textarea class="form-control" id="observations" rows="3"></textarea>
+                                <textarea class="form-control" id="observations" name="observations" rows="3"></textarea>
                         div.form-group
                             <button type="submit" class="btn btn-primary cancel">Cancelar</button>
                             <button type="submit" class="btn btn-primary">Cotizar</button>
@@ -121,76 +121,6 @@ block content
                         .row
                             .col-xl-12
                                 #sedanCollapse1.collapse.multi-collapse.show
-                                    .card.card-body
-                                        ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
-                                            li.carWrapper.position-relative.float-left.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
-                                                .content.position-absolute.h-100.w-100
-                                                    .front.d-flex.justify-content-center.flex-column.position-absolute.h-100.w-100
-                                                        img.d-block.ml-4.mr-4.mb-4.car(src='img/fleet/celerio.jpg' alt='alquiler de sedanes')
-                                                        h5 Suzuki Celerio (o similar)
-                                                    .back.d-flex.justify-content-center.flex-column.position-absolute.h-100.w-100
-                                                        ul.list-unstyled.d-flex.mb-3.justify-content-center
-                                                            li.media.pr-2.mr-2
-                                                                img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                                .media-body.text-left 4
-                                                            li.media.pr-2.mr-2
-                                                                img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                                .media-body.text-left 5
-                                                            li.media
-                                                                img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                                .media-body.text-left.text-nowrap 1.0 lts
-                                                        p
-                                                            span.text-center 4 puertas
-                                                        p
-                                                            span.text-center Manual
-
-                                            li.carWrapper.position-relative.float-left.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
-                                                .content.position-absolute.h-100.w-100
-                                                    .front.d-flex.justify-content-center.flex-column.position-absolute.h-100.w-100
-                                                        img.d-block.ml-4.mr-4.mb-4.car(src='img/fleet/swift.jpg' alt='alquiler de sedanes')
-                                                        h5 Suzuki Swift Dzire (o similar)
-                                                    .back.d-flex.justify-content-center.flex-column.position-absolute.h-100.w-100
-                                                        ul.list-unstyled.d-flex.mb-3.justify-content-center
-                                                            li.media.pr-2.mr-2
-                                                                img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                                .media-body.text-left 5
-                                                            li.media.pr-2.mr-2
-                                                                img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                                .media-body.text-left 5
-                                                            li.media
-                                                                img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                                .media-body.text-left.text-nowrap 1.5 lts
-                                                        p
-                                                            span.text-center 4 puertas
-                                                        p
-                                                            span.text-center Manual
-
-                                            li.carWrapper.position-relative.float-left.text-center.mx-auto.mb-5.mb-md-0.animate.delay-04(data-animations="slide-right")
-                                                .content.position-absolute.h-100.w-100
-                                                    .front.d-flex.justify-content-center.flex-column.position-absolute.h-100.w-100
-                                                        img.d-block.ml-4.mr-4.mb-4.car(src='img/fleet/yaris.jpg' alt='alquiler de sedanes')
-                                                        h5 Toyota Yaris (o similar)
-                                                    .back.d-flex.justify-content-center.flex-column.position-absolute.h-100.w-100
-                                                        ul.list-unstyled.d-flex.mb-3.justify-content-center
-                                                            li.media.pr-2.mr-2
-                                                                img.mr-2(src='img/fleet/passengers-icon.svg' alt='Number of passengers')
-                                                                .media-body.text-left 5
-                                                            li.media.pr-2.mr-2
-                                                                img.mr-2(src='img/fleet/gear-icon.svg' alt='Number of gears')
-                                                                .media-body.text-left 5
-                                                            li.media
-                                                                img.mr-2(src='img/fleet/engine-icon.svg' alt='Number of engine')
-                                                                .media-body.text-left.text-nowrap 1.5 lts
-                                                        p
-                                                            span.text-center 4 puertas
-                                                        p
-                                                            span.text-center Manual   
-                                                        p
-                                                            span.text-center Auto             
-                            
-                        .row
-                            .col-xl-12
-                                #sedanCollapse2.collapse.multi-collapse
                                     .card.card-body
                                         ul.pl-0.d-flex.flex-wrap.list-unstyled.justify-content-md-between.mb-5
                                             li.carWrapper.position-relative.float-left.text-center.mx-auto.mb-5.mb-md-0.animate(data-animations="slide-right")
@@ -281,6 +211,6 @@ block content
                                                         p
                                                             span.text-center 4 puertas
                                                         p
-                                                            span.text-center Autom&aacute;tico    
+                                                            span.text-center Autom&aacute;tico       
 
 
